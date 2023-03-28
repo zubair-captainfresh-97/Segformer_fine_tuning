@@ -1,0 +1,55 @@
+schema: '2.0'
+stages:
+  training:
+    cmd: papermill notebooks/Segformer_fine_tuning.ipynb notebook_output/Segformer_fine_tuning.ipynb
+    deps:
+    - path: SegFormer_dependencies
+      md5: 6b75137b2e9ffdb6461695e06365167f.dir
+      size: 32726
+      nfiles: 12
+    - path: clr_callback.py
+      md5: 6dc46cdd0e93eb9a7bc7c66080d48af0
+      size: 5398
+    - path: loss.py
+      md5: d6cb8a1b8b32984dffa550f6174151b7
+      size: 1437
+    - path: notebooks/Segformer_fine_tuning.ipynb
+      md5: 9b27c383cfbf9987a8c9e57e5f4a7294
+      size: 54142
+    - path: tfrecords/
+      md5: fe3e2fa86740249789e2e9d55d98909f.dir
+      size: 7399210896
+      nfiles: 15
+    params:
+      params.yaml:
+        model_params.Batch_size: 16
+        model_params.Epochs: 500
+        model_params.Image_patch_size:
+        - 256
+        - 256
+        - 3
+        model_params.Learning_rate: 0.0001
+        model_params.Mask_patch_size:
+        - 256
+        - 256
+        model_params.Number_of_classes: 2
+        model_params.Optimizer: nadam
+        model_params.Scheduler: Cycliclearning_rate
+    outs:
+    - path: confusion_matrix.png
+      md5: fe95b8e7908f0caf1e1756192574ecb2
+      size: 10140
+    - path: evaluation/metrics.json
+      md5: 17aecf507a07d38f346c95dd534276f0
+      size: 380
+    - path: evaluation/plots
+      md5: 677e149243ce67ceea7246da63a7ca96.dir
+      size: 23150
+      nfiles: 8
+    - path: evaluation/report.html
+      md5: 56344d5f4327f05a06a3d7a9699c66af
+      size: 128695
+    - path: model_checkpoint/
+      md5: 5034ac855838b597c7516b0017d9c872.dir
+      size: 50796086
+      nfiles: 4

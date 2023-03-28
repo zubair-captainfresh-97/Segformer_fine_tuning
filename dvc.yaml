@@ -1,0 +1,29 @@
+stages:
+  training:
+    cmd: papermill notebooks/Segformer_fine_tuning.ipynb notebook_output/Segformer_fine_tuning.ipynb
+    deps:
+    - notebooks/Segformer_fine_tuning.ipynb
+    - tfrecords/
+    - loss.py
+    - clr_callback.py
+    - SegFormer_dependencies
+    params:
+    - model_params.Image_patch_size
+    - model_params.Mask_patch_size
+    - model_params.Batch_size
+    - model_params.Number_of_classes
+    - model_params.Learning_rate
+    - model_params.Optimizer
+    - model_params.Epochs
+    - model_params.Scheduler
+    outs:
+    - 'model_checkpoint/'
+    -  evaluation/report.html:
+        cache: false
+    metrics:
+      - evaluation/metrics.json:
+          cache: false
+    plots:
+    - evaluation/plots
+    - confusion_matrix.png:
+        cache: false

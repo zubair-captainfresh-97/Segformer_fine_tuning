@@ -1,0 +1,5962 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="5">
+    <title>DVC Plot</title>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+    
+    <style>
+        table {
+            border-spacing: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="metrics_json" style="text-align: center; padding: 10x">
+            <p>metrics_json</p>
+            <div style="display: flex;justify-content: center;">
+                <table>
+<thead>
+<tr><th>train                                                                                                                           </th><th>eval                                                                                                                            </th><th style="text-align: right;">  step</th></tr>
+</thead>
+<tbody>
+<tr><td>{&#x27;loss&#x27;: 0.04083089157938957, &#x27;one_hot_io_u&#x27;: 0.8977556228637695, &#x27;precision&#x27;: 0.9478862285614014, &#x27;recall&#x27;: 0.9478861093521118}</td><td>{&#x27;loss&#x27;: 0.06855417042970657, &#x27;one_hot_io_u&#x27;: 0.8387174606323242, &#x27;precision&#x27;: 0.9148514866828918, &#x27;recall&#x27;: 0.9148514866828918}</td><td style="text-align: right;">   128</td></tr>
+</tbody>
+</table>
+            </div>
+        </div>
+
+    <div id = "static_train_one_hot_io_u">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "values": [
+    {
+        "one_hot_io_u": "0.651797890663147",
+        "rev": "workspace",
+        "step": "0"
+    },
+    {
+        "one_hot_io_u": "0.6933760643005371",
+        "rev": "workspace",
+        "step": "1"
+    },
+    {
+        "one_hot_io_u": "0.7155818939208984",
+        "rev": "workspace",
+        "step": "2"
+    },
+    {
+        "one_hot_io_u": "0.7248066663742065",
+        "rev": "workspace",
+        "step": "3"
+    },
+    {
+        "one_hot_io_u": "0.7275981903076172",
+        "rev": "workspace",
+        "step": "4"
+    },
+    {
+        "one_hot_io_u": "0.7379923462867737",
+        "rev": "workspace",
+        "step": "5"
+    },
+    {
+        "one_hot_io_u": "0.7399390935897827",
+        "rev": "workspace",
+        "step": "6"
+    },
+    {
+        "one_hot_io_u": "0.7521563172340393",
+        "rev": "workspace",
+        "step": "7"
+    },
+    {
+        "one_hot_io_u": "0.756982147693634",
+        "rev": "workspace",
+        "step": "8"
+    },
+    {
+        "one_hot_io_u": "0.7705869674682617",
+        "rev": "workspace",
+        "step": "9"
+    },
+    {
+        "one_hot_io_u": "0.7744689583778381",
+        "rev": "workspace",
+        "step": "10"
+    },
+    {
+        "one_hot_io_u": "0.7840687036514282",
+        "rev": "workspace",
+        "step": "11"
+    },
+    {
+        "one_hot_io_u": "0.7919120788574219",
+        "rev": "workspace",
+        "step": "12"
+    },
+    {
+        "one_hot_io_u": "0.7909355163574219",
+        "rev": "workspace",
+        "step": "13"
+    },
+    {
+        "one_hot_io_u": "0.7939433455467224",
+        "rev": "workspace",
+        "step": "14"
+    },
+    {
+        "one_hot_io_u": "0.7955706119537354",
+        "rev": "workspace",
+        "step": "15"
+    },
+    {
+        "one_hot_io_u": "0.7992261648178101",
+        "rev": "workspace",
+        "step": "16"
+    },
+    {
+        "one_hot_io_u": "0.8003024458885193",
+        "rev": "workspace",
+        "step": "17"
+    },
+    {
+        "one_hot_io_u": "0.8050023913383484",
+        "rev": "workspace",
+        "step": "18"
+    },
+    {
+        "one_hot_io_u": "0.8125013113021851",
+        "rev": "workspace",
+        "step": "19"
+    },
+    {
+        "one_hot_io_u": "0.8184762001037598",
+        "rev": "workspace",
+        "step": "20"
+    },
+    {
+        "one_hot_io_u": "0.8247008323669434",
+        "rev": "workspace",
+        "step": "21"
+    },
+    {
+        "one_hot_io_u": "0.8315709829330444",
+        "rev": "workspace",
+        "step": "22"
+    },
+    {
+        "one_hot_io_u": "0.8331648111343384",
+        "rev": "workspace",
+        "step": "23"
+    },
+    {
+        "one_hot_io_u": "0.8397130966186523",
+        "rev": "workspace",
+        "step": "24"
+    },
+    {
+        "one_hot_io_u": "0.8412665128707886",
+        "rev": "workspace",
+        "step": "25"
+    },
+    {
+        "one_hot_io_u": "0.8390116691589355",
+        "rev": "workspace",
+        "step": "26"
+    },
+    {
+        "one_hot_io_u": "0.8401068449020386",
+        "rev": "workspace",
+        "step": "27"
+    },
+    {
+        "one_hot_io_u": "0.8449960350990295",
+        "rev": "workspace",
+        "step": "28"
+    },
+    {
+        "one_hot_io_u": "0.8415213823318481",
+        "rev": "workspace",
+        "step": "29"
+    },
+    {
+        "one_hot_io_u": "0.8432732820510864",
+        "rev": "workspace",
+        "step": "30"
+    },
+    {
+        "one_hot_io_u": "0.8483047485351562",
+        "rev": "workspace",
+        "step": "31"
+    },
+    {
+        "one_hot_io_u": "0.8568974733352661",
+        "rev": "workspace",
+        "step": "32"
+    },
+    {
+        "one_hot_io_u": "0.864662230014801",
+        "rev": "workspace",
+        "step": "33"
+    },
+    {
+        "one_hot_io_u": "0.8661207556724548",
+        "rev": "workspace",
+        "step": "34"
+    },
+    {
+        "one_hot_io_u": "0.8697011470794678",
+        "rev": "workspace",
+        "step": "35"
+    },
+    {
+        "one_hot_io_u": "0.8672575950622559",
+        "rev": "workspace",
+        "step": "36"
+    },
+    {
+        "one_hot_io_u": "0.8761795163154602",
+        "rev": "workspace",
+        "step": "37"
+    },
+    {
+        "one_hot_io_u": "0.8730266094207764",
+        "rev": "workspace",
+        "step": "38"
+    },
+    {
+        "one_hot_io_u": "0.8749525547027588",
+        "rev": "workspace",
+        "step": "39"
+    },
+    {
+        "one_hot_io_u": "0.8624753952026367",
+        "rev": "workspace",
+        "step": "40"
+    },
+    {
+        "one_hot_io_u": "0.8702676296234131",
+        "rev": "workspace",
+        "step": "41"
+    },
+    {
+        "one_hot_io_u": "0.8709176778793335",
+        "rev": "workspace",
+        "step": "42"
+    },
+    {
+        "one_hot_io_u": "0.8785491585731506",
+        "rev": "workspace",
+        "step": "43"
+    },
+    {
+        "one_hot_io_u": "0.8832788467407227",
+        "rev": "workspace",
+        "step": "44"
+    },
+    {
+        "one_hot_io_u": "0.8861298561096191",
+        "rev": "workspace",
+        "step": "45"
+    },
+    {
+        "one_hot_io_u": "0.8894920349121094",
+        "rev": "workspace",
+        "step": "46"
+    },
+    {
+        "one_hot_io_u": "0.8928416967391968",
+        "rev": "workspace",
+        "step": "47"
+    },
+    {
+        "one_hot_io_u": "0.8931387662887573",
+        "rev": "workspace",
+        "step": "48"
+    },
+    {
+        "one_hot_io_u": "0.8956538438796997",
+        "rev": "workspace",
+        "step": "49"
+    },
+    {
+        "one_hot_io_u": "0.8941905498504639",
+        "rev": "workspace",
+        "step": "50"
+    },
+    {
+        "one_hot_io_u": "0.8934940099716187",
+        "rev": "workspace",
+        "step": "51"
+    },
+    {
+        "one_hot_io_u": "0.8934894800186157",
+        "rev": "workspace",
+        "step": "52"
+    },
+    {
+        "one_hot_io_u": "0.8773511648178101",
+        "rev": "workspace",
+        "step": "53"
+    },
+    {
+        "one_hot_io_u": "0.8748827576637268",
+        "rev": "workspace",
+        "step": "54"
+    },
+    {
+        "one_hot_io_u": "0.8956412076950073",
+        "rev": "workspace",
+        "step": "55"
+    },
+    {
+        "one_hot_io_u": "0.9000303149223328",
+        "rev": "workspace",
+        "step": "56"
+    },
+    {
+        "one_hot_io_u": "0.9026095867156982",
+        "rev": "workspace",
+        "step": "57"
+    },
+    {
+        "one_hot_io_u": "0.9046192765235901",
+        "rev": "workspace",
+        "step": "58"
+    },
+    {
+        "one_hot_io_u": "0.9054361581802368",
+        "rev": "workspace",
+        "step": "59"
+    },
+    {
+        "one_hot_io_u": "0.9093598127365112",
+        "rev": "workspace",
+        "step": "60"
+    },
+    {
+        "one_hot_io_u": "0.9098049402236938",
+        "rev": "workspace",
+        "step": "61"
+    },
+    {
+        "one_hot_io_u": "0.9083899259567261",
+        "rev": "workspace",
+        "step": "62"
+    },
+    {
+        "one_hot_io_u": "0.9076623916625977",
+        "rev": "workspace",
+        "step": "63"
+    },
+    {
+        "one_hot_io_u": "0.9079204201698303",
+        "rev": "workspace",
+        "step": "64"
+    },
+    {
+        "one_hot_io_u": "0.9042398929595947",
+        "rev": "workspace",
+        "step": "65"
+    },
+    {
+        "one_hot_io_u": "0.8951891660690308",
+        "rev": "workspace",
+        "step": "66"
+    },
+    {
+        "one_hot_io_u": "0.9022539258003235",
+        "rev": "workspace",
+        "step": "67"
+    },
+    {
+        "one_hot_io_u": "0.8769359588623047",
+        "rev": "workspace",
+        "step": "68"
+    },
+    {
+        "one_hot_io_u": "0.9045478105545044",
+        "rev": "workspace",
+        "step": "69"
+    },
+    {
+        "one_hot_io_u": "0.9124151468276978",
+        "rev": "workspace",
+        "step": "70"
+    },
+    {
+        "one_hot_io_u": "0.9172189235687256",
+        "rev": "workspace",
+        "step": "71"
+    },
+    {
+        "one_hot_io_u": "0.9193407297134399",
+        "rev": "workspace",
+        "step": "72"
+    },
+    {
+        "one_hot_io_u": "0.9211040735244751",
+        "rev": "workspace",
+        "step": "73"
+    },
+    {
+        "one_hot_io_u": "0.9207231998443604",
+        "rev": "workspace",
+        "step": "74"
+    },
+    {
+        "one_hot_io_u": "0.9198316335678101",
+        "rev": "workspace",
+        "step": "75"
+    },
+    {
+        "one_hot_io_u": "0.9198734760284424",
+        "rev": "workspace",
+        "step": "76"
+    },
+    {
+        "one_hot_io_u": "0.9117587208747864",
+        "rev": "workspace",
+        "step": "77"
+    },
+    {
+        "one_hot_io_u": "0.908530592918396",
+        "rev": "workspace",
+        "step": "78"
+    },
+    {
+        "one_hot_io_u": "0.9110530018806458",
+        "rev": "workspace",
+        "step": "79"
+    },
+    {
+        "one_hot_io_u": "0.9122141599655151",
+        "rev": "workspace",
+        "step": "80"
+    },
+    {
+        "one_hot_io_u": "0.922583818435669",
+        "rev": "workspace",
+        "step": "81"
+    },
+    {
+        "one_hot_io_u": "0.9254965782165527",
+        "rev": "workspace",
+        "step": "82"
+    },
+    {
+        "one_hot_io_u": "0.9267829656600952",
+        "rev": "workspace",
+        "step": "83"
+    },
+    {
+        "one_hot_io_u": "0.9279272556304932",
+        "rev": "workspace",
+        "step": "84"
+    },
+    {
+        "one_hot_io_u": "0.929134726524353",
+        "rev": "workspace",
+        "step": "85"
+    },
+    {
+        "one_hot_io_u": "0.9306159019470215",
+        "rev": "workspace",
+        "step": "86"
+    },
+    {
+        "one_hot_io_u": "0.9289301633834839",
+        "rev": "workspace",
+        "step": "87"
+    },
+    {
+        "one_hot_io_u": "0.9278531074523926",
+        "rev": "workspace",
+        "step": "88"
+    },
+    {
+        "one_hot_io_u": "0.9183198809623718",
+        "rev": "workspace",
+        "step": "89"
+    },
+    {
+        "one_hot_io_u": "0.9178597927093506",
+        "rev": "workspace",
+        "step": "90"
+    },
+    {
+        "one_hot_io_u": "0.9264743328094482",
+        "rev": "workspace",
+        "step": "91"
+    },
+    {
+        "one_hot_io_u": "0.9311922788619995",
+        "rev": "workspace",
+        "step": "92"
+    },
+    {
+        "one_hot_io_u": "0.9322783946990967",
+        "rev": "workspace",
+        "step": "93"
+    },
+    {
+        "one_hot_io_u": "0.9334309697151184",
+        "rev": "workspace",
+        "step": "94"
+    },
+    {
+        "one_hot_io_u": "0.9351568222045898",
+        "rev": "workspace",
+        "step": "95"
+    },
+    {
+        "one_hot_io_u": "0.9359818696975708",
+        "rev": "workspace",
+        "step": "96"
+    },
+    {
+        "one_hot_io_u": "0.9373904466629028",
+        "rev": "workspace",
+        "step": "97"
+    },
+    {
+        "one_hot_io_u": "0.93852299451828",
+        "rev": "workspace",
+        "step": "98"
+    },
+    {
+        "one_hot_io_u": "0.9373204708099365",
+        "rev": "workspace",
+        "step": "99"
+    },
+    {
+        "one_hot_io_u": "0.9343211054801941",
+        "rev": "workspace",
+        "step": "100"
+    },
+    {
+        "one_hot_io_u": "0.9340356588363647",
+        "rev": "workspace",
+        "step": "101"
+    },
+    {
+        "one_hot_io_u": "0.8772015571594238",
+        "rev": "workspace",
+        "step": "102"
+    },
+    {
+        "one_hot_io_u": "0.8951410055160522",
+        "rev": "workspace",
+        "step": "103"
+    },
+    {
+        "one_hot_io_u": "0.9244726300239563",
+        "rev": "workspace",
+        "step": "104"
+    },
+    {
+        "one_hot_io_u": "0.9327876567840576",
+        "rev": "workspace",
+        "step": "105"
+    },
+    {
+        "one_hot_io_u": "0.9367437958717346",
+        "rev": "workspace",
+        "step": "106"
+    },
+    {
+        "one_hot_io_u": "0.9395204186439514",
+        "rev": "workspace",
+        "step": "107"
+    },
+    {
+        "one_hot_io_u": "0.9408100843429565",
+        "rev": "workspace",
+        "step": "108"
+    },
+    {
+        "one_hot_io_u": "0.9418849349021912",
+        "rev": "workspace",
+        "step": "109"
+    },
+    {
+        "one_hot_io_u": "0.9433690905570984",
+        "rev": "workspace",
+        "step": "110"
+    },
+    {
+        "one_hot_io_u": "0.9426902532577515",
+        "rev": "workspace",
+        "step": "111"
+    },
+    {
+        "one_hot_io_u": "0.9422048330307007",
+        "rev": "workspace",
+        "step": "112"
+    },
+    {
+        "one_hot_io_u": "0.9396621584892273",
+        "rev": "workspace",
+        "step": "113"
+    },
+    {
+        "one_hot_io_u": "0.9378800988197327",
+        "rev": "workspace",
+        "step": "114"
+    },
+    {
+        "one_hot_io_u": "0.9374330043792725",
+        "rev": "workspace",
+        "step": "115"
+    },
+    {
+        "one_hot_io_u": "0.9301024675369263",
+        "rev": "workspace",
+        "step": "116"
+    },
+    {
+        "one_hot_io_u": "0.9070496559143066",
+        "rev": "workspace",
+        "step": "117"
+    },
+    {
+        "one_hot_io_u": "0.9305963516235352",
+        "rev": "workspace",
+        "step": "118"
+    },
+    {
+        "one_hot_io_u": "0.9406313896179199",
+        "rev": "workspace",
+        "step": "119"
+    },
+    {
+        "one_hot_io_u": "0.9441536664962769",
+        "rev": "workspace",
+        "step": "120"
+    },
+    {
+        "one_hot_io_u": "0.945671558380127",
+        "rev": "workspace",
+        "step": "121"
+    },
+    {
+        "one_hot_io_u": "0.9465411901473999",
+        "rev": "workspace",
+        "step": "122"
+    },
+    {
+        "one_hot_io_u": "0.9465854167938232",
+        "rev": "workspace",
+        "step": "123"
+    },
+    {
+        "one_hot_io_u": "0.9458985924720764",
+        "rev": "workspace",
+        "step": "124"
+    },
+    {
+        "one_hot_io_u": "0.9439575672149658",
+        "rev": "workspace",
+        "step": "125"
+    },
+    {
+        "one_hot_io_u": "0.9384545683860779",
+        "rev": "workspace",
+        "step": "126"
+    },
+    {
+        "one_hot_io_u": "0.9296643733978271",
+        "rev": "workspace",
+        "step": "127"
+    },
+    {
+        "one_hot_io_u": "0.8977556228637695",
+        "rev": "workspace",
+        "step": "128"
+    }
+]
+    },
+    "title": "train/one_hot_io_u",
+    "width": 300,
+    "height": 300,
+    "params": [
+        {
+            "name": "smooth",
+            "value": 0.001,
+            "bind": {
+                "input": "range",
+                "min": 0.001,
+                "max": 1,
+                "step": 0.001
+            }
+        }
+    ],
+    "layer": [
+        {
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "one_hot_io_u",
+                    "type": "quantitative",
+                    "title": "one_hot_io_u",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "transform": [
+                {
+                    "loess": "one_hot_io_u",
+                    "on": "step",
+                    "groupby": [
+                        "rev",
+                        "filename",
+                        "field",
+                        "filename::field"
+                    ],
+                    "bandwidth": {
+                        "signal": "smooth"
+                    }
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "point",
+                "tooltip": {
+                    "content": "data"
+                }
+            },
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "one_hot_io_u",
+                    "type": "quantitative",
+                    "title": "one_hot_io_u",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            }
+        }
+    ]
+}
+;
+            vegaEmbed('#static_train_one_hot_io_u', spec);
+        </script>
+    </div>
+    
+
+    <div id = "static_train_recall">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "values": [
+    {
+        "recall": "0.7998403906822205",
+        "rev": "workspace",
+        "step": "0"
+    },
+    {
+        "recall": "0.826524019241333",
+        "rev": "workspace",
+        "step": "1"
+    },
+    {
+        "recall": "0.840851366519928",
+        "rev": "workspace",
+        "step": "2"
+    },
+    {
+        "recall": "0.8458806276321411",
+        "rev": "workspace",
+        "step": "3"
+    },
+    {
+        "recall": "0.8481293320655823",
+        "rev": "workspace",
+        "step": "4"
+    },
+    {
+        "recall": "0.8545182943344116",
+        "rev": "workspace",
+        "step": "5"
+    },
+    {
+        "recall": "0.8560413718223572",
+        "rev": "workspace",
+        "step": "6"
+    },
+    {
+        "recall": "0.8633618950843811",
+        "rev": "workspace",
+        "step": "7"
+    },
+    {
+        "recall": "0.8665833473205566",
+        "rev": "workspace",
+        "step": "8"
+    },
+    {
+        "recall": "0.8750588297843933",
+        "rev": "workspace",
+        "step": "9"
+    },
+    {
+        "recall": "0.8774327635765076",
+        "rev": "workspace",
+        "step": "10"
+    },
+    {
+        "recall": "0.8830490112304688",
+        "rev": "workspace",
+        "step": "11"
+    },
+    {
+        "recall": "0.8880865573883057",
+        "rev": "workspace",
+        "step": "12"
+    },
+    {
+        "recall": "0.8869823813438416",
+        "rev": "workspace",
+        "step": "13"
+    },
+    {
+        "recall": "0.8890155553817749",
+        "rev": "workspace",
+        "step": "14"
+    },
+    {
+        "recall": "0.8904613256454468",
+        "rev": "workspace",
+        "step": "15"
+    },
+    {
+        "recall": "0.8922723531723022",
+        "rev": "workspace",
+        "step": "16"
+    },
+    {
+        "recall": "0.8924442529678345",
+        "rev": "workspace",
+        "step": "17"
+    },
+    {
+        "recall": "0.8956469893455505",
+        "rev": "workspace",
+        "step": "18"
+    },
+    {
+        "recall": "0.9000914096832275",
+        "rev": "workspace",
+        "step": "19"
+    },
+    {
+        "recall": "0.9033509492874146",
+        "rev": "workspace",
+        "step": "20"
+    },
+    {
+        "recall": "0.9073745012283325",
+        "rev": "workspace",
+        "step": "21"
+    },
+    {
+        "recall": "0.9111875295639038",
+        "rev": "workspace",
+        "step": "22"
+    },
+    {
+        "recall": "0.9119977951049805",
+        "rev": "workspace",
+        "step": "23"
+    },
+    {
+        "recall": "0.9158293604850769",
+        "rev": "workspace",
+        "step": "24"
+    },
+    {
+        "recall": "0.9166419506072998",
+        "rev": "workspace",
+        "step": "25"
+    },
+    {
+        "recall": "0.9153956174850464",
+        "rev": "workspace",
+        "step": "26"
+    },
+    {
+        "recall": "0.915843665599823",
+        "rev": "workspace",
+        "step": "27"
+    },
+    {
+        "recall": "0.9188570976257324",
+        "rev": "workspace",
+        "step": "28"
+    },
+    {
+        "recall": "0.9168477654457092",
+        "rev": "workspace",
+        "step": "29"
+    },
+    {
+        "recall": "0.9176859259605408",
+        "rev": "workspace",
+        "step": "30"
+    },
+    {
+        "recall": "0.9204530715942383",
+        "rev": "workspace",
+        "step": "31"
+    },
+    {
+        "recall": "0.9254507422447205",
+        "rev": "workspace",
+        "step": "32"
+    },
+    {
+        "recall": "0.9298766851425171",
+        "rev": "workspace",
+        "step": "33"
+    },
+    {
+        "recall": "0.9305079579353333",
+        "rev": "workspace",
+        "step": "34"
+    },
+    {
+        "recall": "0.9325525164604187",
+        "rev": "workspace",
+        "step": "35"
+    },
+    {
+        "recall": "0.9310770034790039",
+        "rev": "workspace",
+        "step": "36"
+    },
+    {
+        "recall": "0.9363116025924683",
+        "rev": "workspace",
+        "step": "37"
+    },
+    {
+        "recall": "0.9343106150627136",
+        "rev": "workspace",
+        "step": "38"
+    },
+    {
+        "recall": "0.9356571435928345",
+        "rev": "workspace",
+        "step": "39"
+    },
+    {
+        "recall": "0.9285805225372314",
+        "rev": "workspace",
+        "step": "40"
+    },
+    {
+        "recall": "0.9329172372817993",
+        "rev": "workspace",
+        "step": "41"
+    },
+    {
+        "recall": "0.9331915378570557",
+        "rev": "workspace",
+        "step": "42"
+    },
+    {
+        "recall": "0.9374822378158569",
+        "rev": "workspace",
+        "step": "43"
+    },
+    {
+        "recall": "0.9399365782737732",
+        "rev": "workspace",
+        "step": "44"
+    },
+    {
+        "recall": "0.9417300224304199",
+        "rev": "workspace",
+        "step": "45"
+    },
+    {
+        "recall": "0.9433683156967163",
+        "rev": "workspace",
+        "step": "46"
+    },
+    {
+        "recall": "0.9453154802322388",
+        "rev": "workspace",
+        "step": "47"
+    },
+    {
+        "recall": "0.9453625679016113",
+        "rev": "workspace",
+        "step": "48"
+    },
+    {
+        "recall": "0.9468221664428711",
+        "rev": "workspace",
+        "step": "49"
+    },
+    {
+        "recall": "0.9460019469261169",
+        "rev": "workspace",
+        "step": "50"
+    },
+    {
+        "recall": "0.9454599618911743",
+        "rev": "workspace",
+        "step": "51"
+    },
+    {
+        "recall": "0.9455037117004395",
+        "rev": "workspace",
+        "step": "52"
+    },
+    {
+        "recall": "0.9367987513542175",
+        "rev": "workspace",
+        "step": "53"
+    },
+    {
+        "recall": "0.9354317784309387",
+        "rev": "workspace",
+        "step": "54"
+    },
+    {
+        "recall": "0.946910560131073",
+        "rev": "workspace",
+        "step": "55"
+    },
+    {
+        "recall": "0.9490232467651367",
+        "rev": "workspace",
+        "step": "56"
+    },
+    {
+        "recall": "0.9504073858261108",
+        "rev": "workspace",
+        "step": "57"
+    },
+    {
+        "recall": "0.95160311460495",
+        "rev": "workspace",
+        "step": "58"
+    },
+    {
+        "recall": "0.9519275426864624",
+        "rev": "workspace",
+        "step": "59"
+    },
+    {
+        "recall": "0.9541143774986267",
+        "rev": "workspace",
+        "step": "60"
+    },
+    {
+        "recall": "0.9543606042861938",
+        "rev": "workspace",
+        "step": "61"
+    },
+    {
+        "recall": "0.9536377787590027",
+        "rev": "workspace",
+        "step": "62"
+    },
+    {
+        "recall": "0.953236997127533",
+        "rev": "workspace",
+        "step": "63"
+    },
+    {
+        "recall": "0.9532210230827332",
+        "rev": "workspace",
+        "step": "64"
+    },
+    {
+        "recall": "0.9514045715332031",
+        "rev": "workspace",
+        "step": "65"
+    },
+    {
+        "recall": "0.9464185833930969",
+        "rev": "workspace",
+        "step": "66"
+    },
+    {
+        "recall": "0.9503365755081177",
+        "rev": "workspace",
+        "step": "67"
+    },
+    {
+        "recall": "0.936569094657898",
+        "rev": "workspace",
+        "step": "68"
+    },
+    {
+        "recall": "0.9514934420585632",
+        "rev": "workspace",
+        "step": "69"
+    },
+    {
+        "recall": "0.9556755423545837",
+        "rev": "workspace",
+        "step": "70"
+    },
+    {
+        "recall": "0.9582383632659912",
+        "rev": "workspace",
+        "step": "71"
+    },
+    {
+        "recall": "0.9592992067337036",
+        "rev": "workspace",
+        "step": "72"
+    },
+    {
+        "recall": "0.9602787494659424",
+        "rev": "workspace",
+        "step": "73"
+    },
+    {
+        "recall": "0.9601276516914368",
+        "rev": "workspace",
+        "step": "74"
+    },
+    {
+        "recall": "0.959568202495575",
+        "rev": "workspace",
+        "step": "75"
+    },
+    {
+        "recall": "0.9596491456031799",
+        "rev": "workspace",
+        "step": "76"
+    },
+    {
+        "recall": "0.9553484320640564",
+        "rev": "workspace",
+        "step": "77"
+    },
+    {
+        "recall": "0.953637957572937",
+        "rev": "workspace",
+        "step": "78"
+    },
+    {
+        "recall": "0.9548695087432861",
+        "rev": "workspace",
+        "step": "79"
+    },
+    {
+        "recall": "0.9556761980056763",
+        "rev": "workspace",
+        "step": "80"
+    },
+    {
+        "recall": "0.9610462784767151",
+        "rev": "workspace",
+        "step": "81"
+    },
+    {
+        "recall": "0.9626055359840393",
+        "rev": "workspace",
+        "step": "82"
+    },
+    {
+        "recall": "0.9632408022880554",
+        "rev": "workspace",
+        "step": "83"
+    },
+    {
+        "recall": "0.9638442993164062",
+        "rev": "workspace",
+        "step": "84"
+    },
+    {
+        "recall": "0.9645166397094727",
+        "rev": "workspace",
+        "step": "85"
+    },
+    {
+        "recall": "0.9652273654937744",
+        "rev": "workspace",
+        "step": "86"
+    },
+    {
+        "recall": "0.9643138647079468",
+        "rev": "workspace",
+        "step": "87"
+    },
+    {
+        "recall": "0.9639209508895874",
+        "rev": "workspace",
+        "step": "88"
+    },
+    {
+        "recall": "0.9586703777313232",
+        "rev": "workspace",
+        "step": "89"
+    },
+    {
+        "recall": "0.9586939811706543",
+        "rev": "workspace",
+        "step": "90"
+    },
+    {
+        "recall": "0.9630821943283081",
+        "rev": "workspace",
+        "step": "91"
+    },
+    {
+        "recall": "0.9655139446258545",
+        "rev": "workspace",
+        "step": "92"
+    },
+    {
+        "recall": "0.9661062955856323",
+        "rev": "workspace",
+        "step": "93"
+    },
+    {
+        "recall": "0.9666405916213989",
+        "rev": "workspace",
+        "step": "94"
+    },
+    {
+        "recall": "0.9676306247711182",
+        "rev": "workspace",
+        "step": "95"
+    },
+    {
+        "recall": "0.9679918885231018",
+        "rev": "workspace",
+        "step": "96"
+    },
+    {
+        "recall": "0.9688133001327515",
+        "rev": "workspace",
+        "step": "97"
+    },
+    {
+        "recall": "0.9692692756652832",
+        "rev": "workspace",
+        "step": "98"
+    },
+    {
+        "recall": "0.9687305688858032",
+        "rev": "workspace",
+        "step": "99"
+    },
+    {
+        "recall": "0.967236340045929",
+        "rev": "workspace",
+        "step": "100"
+    },
+    {
+        "recall": "0.9669733047485352",
+        "rev": "workspace",
+        "step": "101"
+    },
+    {
+        "recall": "0.9368199706077576",
+        "rev": "workspace",
+        "step": "102"
+    },
+    {
+        "recall": "0.9463405013084412",
+        "rev": "workspace",
+        "step": "103"
+    },
+    {
+        "recall": "0.962138831615448",
+        "rev": "workspace",
+        "step": "104"
+    },
+    {
+        "recall": "0.9663591384887695",
+        "rev": "workspace",
+        "step": "105"
+    },
+    {
+        "recall": "0.9683389663696289",
+        "rev": "workspace",
+        "step": "106"
+    },
+    {
+        "recall": "0.9698401689529419",
+        "rev": "workspace",
+        "step": "107"
+    },
+    {
+        "recall": "0.9705643057823181",
+        "rev": "workspace",
+        "step": "108"
+    },
+    {
+        "recall": "0.9709963202476501",
+        "rev": "workspace",
+        "step": "109"
+    },
+    {
+        "recall": "0.971980094909668",
+        "rev": "workspace",
+        "step": "110"
+    },
+    {
+        "recall": "0.9713728427886963",
+        "rev": "workspace",
+        "step": "111"
+    },
+    {
+        "recall": "0.9712310433387756",
+        "rev": "workspace",
+        "step": "112"
+    },
+    {
+        "recall": "0.9699169397354126",
+        "rev": "workspace",
+        "step": "113"
+    },
+    {
+        "recall": "0.9690183401107788",
+        "rev": "workspace",
+        "step": "114"
+    },
+    {
+        "recall": "0.9686924815177917",
+        "rev": "workspace",
+        "step": "115"
+    },
+    {
+        "recall": "0.9650804400444031",
+        "rev": "workspace",
+        "step": "116"
+    },
+    {
+        "recall": "0.9528293013572693",
+        "rev": "workspace",
+        "step": "117"
+    },
+    {
+        "recall": "0.9652066826820374",
+        "rev": "workspace",
+        "step": "118"
+    },
+    {
+        "recall": "0.9704484939575195",
+        "rev": "workspace",
+        "step": "119"
+    },
+    {
+        "recall": "0.9721758961677551",
+        "rev": "workspace",
+        "step": "120"
+    },
+    {
+        "recall": "0.9730395674705505",
+        "rev": "workspace",
+        "step": "121"
+    },
+    {
+        "recall": "0.9734901785850525",
+        "rev": "workspace",
+        "step": "122"
+    },
+    {
+        "recall": "0.9734570384025574",
+        "rev": "workspace",
+        "step": "123"
+    },
+    {
+        "recall": "0.9731005430221558",
+        "rev": "workspace",
+        "step": "124"
+    },
+    {
+        "recall": "0.9721658229827881",
+        "rev": "workspace",
+        "step": "125"
+    },
+    {
+        "recall": "0.9692723155021667",
+        "rev": "workspace",
+        "step": "126"
+    },
+    {
+        "recall": "0.9647176265716553",
+        "rev": "workspace",
+        "step": "127"
+    },
+    {
+        "recall": "0.9478861093521118",
+        "rev": "workspace",
+        "step": "128"
+    }
+]
+    },
+    "title": "train/recall",
+    "width": 300,
+    "height": 300,
+    "params": [
+        {
+            "name": "smooth",
+            "value": 0.001,
+            "bind": {
+                "input": "range",
+                "min": 0.001,
+                "max": 1,
+                "step": 0.001
+            }
+        }
+    ],
+    "layer": [
+        {
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "recall",
+                    "type": "quantitative",
+                    "title": "recall",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "transform": [
+                {
+                    "loess": "recall",
+                    "on": "step",
+                    "groupby": [
+                        "rev",
+                        "filename",
+                        "field",
+                        "filename::field"
+                    ],
+                    "bandwidth": {
+                        "signal": "smooth"
+                    }
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "point",
+                "tooltip": {
+                    "content": "data"
+                }
+            },
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "recall",
+                    "type": "quantitative",
+                    "title": "recall",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            }
+        }
+    ]
+}
+;
+            vegaEmbed('#static_train_recall', spec);
+        </script>
+    </div>
+    
+
+    <div id = "static_train_loss">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "values": [
+    {
+        "loss": "0.1664823740720749",
+        "rev": "workspace",
+        "step": "0"
+    },
+    {
+        "loss": "0.14310172200202942",
+        "rev": "workspace",
+        "step": "1"
+    },
+    {
+        "loss": "0.13129743933677673",
+        "rev": "workspace",
+        "step": "2"
+    },
+    {
+        "loss": "0.1268744170665741",
+        "rev": "workspace",
+        "step": "3"
+    },
+    {
+        "loss": "0.12532168626785278",
+        "rev": "workspace",
+        "step": "4"
+    },
+    {
+        "loss": "0.11950819939374924",
+        "rev": "workspace",
+        "step": "5"
+    },
+    {
+        "loss": "0.11762262880802155",
+        "rev": "workspace",
+        "step": "6"
+    },
+    {
+        "loss": "0.11195158213376999",
+        "rev": "workspace",
+        "step": "7"
+    },
+    {
+        "loss": "0.10923174768686295",
+        "rev": "workspace",
+        "step": "8"
+    },
+    {
+        "loss": "0.10211179405450821",
+        "rev": "workspace",
+        "step": "9"
+    },
+    {
+        "loss": "0.10009226948022842",
+        "rev": "workspace",
+        "step": "10"
+    },
+    {
+        "loss": "0.09564802050590515",
+        "rev": "workspace",
+        "step": "11"
+    },
+    {
+        "loss": "0.09112678468227386",
+        "rev": "workspace",
+        "step": "12"
+    },
+    {
+        "loss": "0.0917927548289299",
+        "rev": "workspace",
+        "step": "13"
+    },
+    {
+        "loss": "0.09030866622924805",
+        "rev": "workspace",
+        "step": "14"
+    },
+    {
+        "loss": "0.08896948397159576",
+        "rev": "workspace",
+        "step": "15"
+    },
+    {
+        "loss": "0.08760896325111389",
+        "rev": "workspace",
+        "step": "16"
+    },
+    {
+        "loss": "0.08740822225809097",
+        "rev": "workspace",
+        "step": "17"
+    },
+    {
+        "loss": "0.0848352313041687",
+        "rev": "workspace",
+        "step": "18"
+    },
+    {
+        "loss": "0.0811958909034729",
+        "rev": "workspace",
+        "step": "19"
+    },
+    {
+        "loss": "0.0782521516084671",
+        "rev": "workspace",
+        "step": "20"
+    },
+    {
+        "loss": "0.07500096410512924",
+        "rev": "workspace",
+        "step": "21"
+    },
+    {
+        "loss": "0.07167287170886993",
+        "rev": "workspace",
+        "step": "22"
+    },
+    {
+        "loss": "0.07121836394071579",
+        "rev": "workspace",
+        "step": "23"
+    },
+    {
+        "loss": "0.06786441057920456",
+        "rev": "workspace",
+        "step": "24"
+    },
+    {
+        "loss": "0.06721993535757065",
+        "rev": "workspace",
+        "step": "25"
+    },
+    {
+        "loss": "0.06816256046295166",
+        "rev": "workspace",
+        "step": "26"
+    },
+    {
+        "loss": "0.06780481338500977",
+        "rev": "workspace",
+        "step": "27"
+    },
+    {
+        "loss": "0.06510136276483536",
+        "rev": "workspace",
+        "step": "28"
+    },
+    {
+        "loss": "0.06670733541250229",
+        "rev": "workspace",
+        "step": "29"
+    },
+    {
+        "loss": "0.06603953242301941",
+        "rev": "workspace",
+        "step": "30"
+    },
+    {
+        "loss": "0.063751220703125",
+        "rev": "workspace",
+        "step": "31"
+    },
+    {
+        "loss": "0.059512265026569366",
+        "rev": "workspace",
+        "step": "32"
+    },
+    {
+        "loss": "0.055925507098436356",
+        "rev": "workspace",
+        "step": "33"
+    },
+    {
+        "loss": "0.05544749274849892",
+        "rev": "workspace",
+        "step": "34"
+    },
+    {
+        "loss": "0.053708162158727646",
+        "rev": "workspace",
+        "step": "35"
+    },
+    {
+        "loss": "0.05500075966119766",
+        "rev": "workspace",
+        "step": "36"
+    },
+    {
+        "loss": "0.050462979823350906",
+        "rev": "workspace",
+        "step": "37"
+    },
+    {
+        "loss": "0.05231861397624016",
+        "rev": "workspace",
+        "step": "38"
+    },
+    {
+        "loss": "0.05108122527599335",
+        "rev": "workspace",
+        "step": "39"
+    },
+    {
+        "loss": "0.05662456899881363",
+        "rev": "workspace",
+        "step": "40"
+    },
+    {
+        "loss": "0.053299542516469955",
+        "rev": "workspace",
+        "step": "41"
+    },
+    {
+        "loss": "0.05307379737496376",
+        "rev": "workspace",
+        "step": "42"
+    },
+    {
+        "loss": "0.049542367458343506",
+        "rev": "workspace",
+        "step": "43"
+    },
+    {
+        "loss": "0.047493863850831985",
+        "rev": "workspace",
+        "step": "44"
+    },
+    {
+        "loss": "0.04596539959311485",
+        "rev": "workspace",
+        "step": "45"
+    },
+    {
+        "loss": "0.04459410905838013",
+        "rev": "workspace",
+        "step": "46"
+    },
+    {
+        "loss": "0.043044865131378174",
+        "rev": "workspace",
+        "step": "47"
+    },
+    {
+        "loss": "0.0430188849568367",
+        "rev": "workspace",
+        "step": "48"
+    },
+    {
+        "loss": "0.041856296360492706",
+        "rev": "workspace",
+        "step": "49"
+    },
+    {
+        "loss": "0.04242024943232536",
+        "rev": "workspace",
+        "step": "50"
+    },
+    {
+        "loss": "0.042789533734321594",
+        "rev": "workspace",
+        "step": "51"
+    },
+    {
+        "loss": "0.0427805595099926",
+        "rev": "workspace",
+        "step": "52"
+    },
+    {
+        "loss": "0.04971419274806976",
+        "rev": "workspace",
+        "step": "53"
+    },
+    {
+        "loss": "0.05084625631570816",
+        "rev": "workspace",
+        "step": "54"
+    },
+    {
+        "loss": "0.04169108346104622",
+        "rev": "workspace",
+        "step": "55"
+    },
+    {
+        "loss": "0.03983334079384804",
+        "rev": "workspace",
+        "step": "56"
+    },
+    {
+        "loss": "0.0387718603014946",
+        "rev": "workspace",
+        "step": "57"
+    },
+    {
+        "loss": "0.03778545558452606",
+        "rev": "workspace",
+        "step": "58"
+    },
+    {
+        "loss": "0.03755731135606766",
+        "rev": "workspace",
+        "step": "59"
+    },
+    {
+        "loss": "0.0357205830514431",
+        "rev": "workspace",
+        "step": "60"
+    },
+    {
+        "loss": "0.03555428609251976",
+        "rev": "workspace",
+        "step": "61"
+    },
+    {
+        "loss": "0.036115363240242004",
+        "rev": "workspace",
+        "step": "62"
+    },
+    {
+        "loss": "0.03644268587231636",
+        "rev": "workspace",
+        "step": "63"
+    },
+    {
+        "loss": "0.03637544810771942",
+        "rev": "workspace",
+        "step": "64"
+    },
+    {
+        "loss": "0.03782565891742706",
+        "rev": "workspace",
+        "step": "65"
+    },
+    {
+        "loss": "0.041756521910429",
+        "rev": "workspace",
+        "step": "66"
+    },
+    {
+        "loss": "0.038562189787626266",
+        "rev": "workspace",
+        "step": "67"
+    },
+    {
+        "loss": "0.05002207309007645",
+        "rev": "workspace",
+        "step": "68"
+    },
+    {
+        "loss": "0.0377255342900753",
+        "rev": "workspace",
+        "step": "69"
+    },
+    {
+        "loss": "0.034387703984975815",
+        "rev": "workspace",
+        "step": "70"
+    },
+    {
+        "loss": "0.032410476356744766",
+        "rev": "workspace",
+        "step": "71"
+    },
+    {
+        "loss": "0.031493451446294785",
+        "rev": "workspace",
+        "step": "72"
+    },
+    {
+        "loss": "0.030709488317370415",
+        "rev": "workspace",
+        "step": "73"
+    },
+    {
+        "loss": "0.03079046495258808",
+        "rev": "workspace",
+        "step": "74"
+    },
+    {
+        "loss": "0.031207088381052017",
+        "rev": "workspace",
+        "step": "75"
+    },
+    {
+        "loss": "0.031072596088051796",
+        "rev": "workspace",
+        "step": "76"
+    },
+    {
+        "loss": "0.03460940718650818",
+        "rev": "workspace",
+        "step": "77"
+    },
+    {
+        "loss": "0.03587183728814125",
+        "rev": "workspace",
+        "step": "78"
+    },
+    {
+        "loss": "0.03487357124686241",
+        "rev": "workspace",
+        "step": "79"
+    },
+    {
+        "loss": "0.03432659059762955",
+        "rev": "workspace",
+        "step": "80"
+    },
+    {
+        "loss": "0.02999616041779518",
+        "rev": "workspace",
+        "step": "81"
+    },
+    {
+        "loss": "0.028729688376188278",
+        "rev": "workspace",
+        "step": "82"
+    },
+    {
+        "loss": "0.028261631727218628",
+        "rev": "workspace",
+        "step": "83"
+    },
+    {
+        "loss": "0.027750175446271896",
+        "rev": "workspace",
+        "step": "84"
+    },
+    {
+        "loss": "0.027307303622364998",
+        "rev": "workspace",
+        "step": "85"
+    },
+    {
+        "loss": "0.02668643556535244",
+        "rev": "workspace",
+        "step": "86"
+    },
+    {
+        "loss": "0.027332859113812447",
+        "rev": "workspace",
+        "step": "87"
+    },
+    {
+        "loss": "0.027661137282848358",
+        "rev": "workspace",
+        "step": "88"
+    },
+    {
+        "loss": "0.03179765120148659",
+        "rev": "workspace",
+        "step": "89"
+    },
+    {
+        "loss": "0.031819116324186325",
+        "rev": "workspace",
+        "step": "90"
+    },
+    {
+        "loss": "0.028249409049749374",
+        "rev": "workspace",
+        "step": "91"
+    },
+    {
+        "loss": "0.026337401941418648",
+        "rev": "workspace",
+        "step": "92"
+    },
+    {
+        "loss": "0.025916757062077522",
+        "rev": "workspace",
+        "step": "93"
+    },
+    {
+        "loss": "0.025488879531621933",
+        "rev": "workspace",
+        "step": "94"
+    },
+    {
+        "loss": "0.024699030444025993",
+        "rev": "workspace",
+        "step": "95"
+    },
+    {
+        "loss": "0.024424966424703598",
+        "rev": "workspace",
+        "step": "96"
+    },
+    {
+        "loss": "0.02381579764187336",
+        "rev": "workspace",
+        "step": "97"
+    },
+    {
+        "loss": "0.023455364629626274",
+        "rev": "workspace",
+        "step": "98"
+    },
+    {
+        "loss": "0.023823527619242668",
+        "rev": "workspace",
+        "step": "99"
+    },
+    {
+        "loss": "0.024997085332870483",
+        "rev": "workspace",
+        "step": "100"
+    },
+    {
+        "loss": "0.025166455656290054",
+        "rev": "workspace",
+        "step": "101"
+    },
+    {
+        "loss": "0.050965238362550735",
+        "rev": "workspace",
+        "step": "102"
+    },
+    {
+        "loss": "0.04179017245769501",
+        "rev": "workspace",
+        "step": "103"
+    },
+    {
+        "loss": "0.028981877490878105",
+        "rev": "workspace",
+        "step": "104"
+    },
+    {
+        "loss": "0.02567845955491066",
+        "rev": "workspace",
+        "step": "105"
+    },
+    {
+        "loss": "0.024145446717739105",
+        "rev": "workspace",
+        "step": "106"
+    },
+    {
+        "loss": "0.023052942007780075",
+        "rev": "workspace",
+        "step": "107"
+    },
+    {
+        "loss": "0.02245301753282547",
+        "rev": "workspace",
+        "step": "108"
+    },
+    {
+        "loss": "0.022109704092144966",
+        "rev": "workspace",
+        "step": "109"
+    },
+    {
+        "loss": "0.02134430781006813",
+        "rev": "workspace",
+        "step": "110"
+    },
+    {
+        "loss": "0.021782822906970978",
+        "rev": "workspace",
+        "step": "111"
+    },
+    {
+        "loss": "0.021876385435461998",
+        "rev": "workspace",
+        "step": "112"
+    },
+    {
+        "loss": "0.022865258157253265",
+        "rev": "workspace",
+        "step": "113"
+    },
+    {
+        "loss": "0.02351229451596737",
+        "rev": "workspace",
+        "step": "114"
+    },
+    {
+        "loss": "0.023791613057255745",
+        "rev": "workspace",
+        "step": "115"
+    },
+    {
+        "loss": "0.026926275342702866",
+        "rev": "workspace",
+        "step": "116"
+    },
+    {
+        "loss": "0.03676112741231918",
+        "rev": "workspace",
+        "step": "117"
+    },
+    {
+        "loss": "0.026557335630059242",
+        "rev": "workspace",
+        "step": "118"
+    },
+    {
+        "loss": "0.0224639680236578",
+        "rev": "workspace",
+        "step": "119"
+    },
+    {
+        "loss": "0.021135080605745316",
+        "rev": "workspace",
+        "step": "120"
+    },
+    {
+        "loss": "0.02051226608455181",
+        "rev": "workspace",
+        "step": "121"
+    },
+    {
+        "loss": "0.020127426832914352",
+        "rev": "workspace",
+        "step": "122"
+    },
+    {
+        "loss": "0.02014426328241825",
+        "rev": "workspace",
+        "step": "123"
+    },
+    {
+        "loss": "0.020388254895806313",
+        "rev": "workspace",
+        "step": "124"
+    },
+    {
+        "loss": "0.02110164985060692",
+        "rev": "workspace",
+        "step": "125"
+    },
+    {
+        "loss": "0.023430462926626205",
+        "rev": "workspace",
+        "step": "126"
+    },
+    {
+        "loss": "0.026972351595759392",
+        "rev": "workspace",
+        "step": "127"
+    },
+    {
+        "loss": "0.04083089157938957",
+        "rev": "workspace",
+        "step": "128"
+    }
+]
+    },
+    "title": "train/loss",
+    "width": 300,
+    "height": 300,
+    "params": [
+        {
+            "name": "smooth",
+            "value": 0.001,
+            "bind": {
+                "input": "range",
+                "min": 0.001,
+                "max": 1,
+                "step": 0.001
+            }
+        }
+    ],
+    "layer": [
+        {
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "loss",
+                    "type": "quantitative",
+                    "title": "loss",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "transform": [
+                {
+                    "loess": "loss",
+                    "on": "step",
+                    "groupby": [
+                        "rev",
+                        "filename",
+                        "field",
+                        "filename::field"
+                    ],
+                    "bandwidth": {
+                        "signal": "smooth"
+                    }
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "point",
+                "tooltip": {
+                    "content": "data"
+                }
+            },
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "loss",
+                    "type": "quantitative",
+                    "title": "loss",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            }
+        }
+    ]
+}
+;
+            vegaEmbed('#static_train_loss', spec);
+        </script>
+    </div>
+    
+
+    <div id = "static_train_precision">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "values": [
+    {
+        "precision": "0.7998403906822205",
+        "rev": "workspace",
+        "step": "0"
+    },
+    {
+        "precision": "0.826524019241333",
+        "rev": "workspace",
+        "step": "1"
+    },
+    {
+        "precision": "0.840851366519928",
+        "rev": "workspace",
+        "step": "2"
+    },
+    {
+        "precision": "0.8458806276321411",
+        "rev": "workspace",
+        "step": "3"
+    },
+    {
+        "precision": "0.8481293320655823",
+        "rev": "workspace",
+        "step": "4"
+    },
+    {
+        "precision": "0.8545182943344116",
+        "rev": "workspace",
+        "step": "5"
+    },
+    {
+        "precision": "0.8560413718223572",
+        "rev": "workspace",
+        "step": "6"
+    },
+    {
+        "precision": "0.8633618950843811",
+        "rev": "workspace",
+        "step": "7"
+    },
+    {
+        "precision": "0.8665833473205566",
+        "rev": "workspace",
+        "step": "8"
+    },
+    {
+        "precision": "0.8750588297843933",
+        "rev": "workspace",
+        "step": "9"
+    },
+    {
+        "precision": "0.8774327635765076",
+        "rev": "workspace",
+        "step": "10"
+    },
+    {
+        "precision": "0.8830490112304688",
+        "rev": "workspace",
+        "step": "11"
+    },
+    {
+        "precision": "0.8880865573883057",
+        "rev": "workspace",
+        "step": "12"
+    },
+    {
+        "precision": "0.8869823813438416",
+        "rev": "workspace",
+        "step": "13"
+    },
+    {
+        "precision": "0.8890155553817749",
+        "rev": "workspace",
+        "step": "14"
+    },
+    {
+        "precision": "0.8904613256454468",
+        "rev": "workspace",
+        "step": "15"
+    },
+    {
+        "precision": "0.8922723531723022",
+        "rev": "workspace",
+        "step": "16"
+    },
+    {
+        "precision": "0.8924442529678345",
+        "rev": "workspace",
+        "step": "17"
+    },
+    {
+        "precision": "0.8956469893455505",
+        "rev": "workspace",
+        "step": "18"
+    },
+    {
+        "precision": "0.9000914096832275",
+        "rev": "workspace",
+        "step": "19"
+    },
+    {
+        "precision": "0.9033509492874146",
+        "rev": "workspace",
+        "step": "20"
+    },
+    {
+        "precision": "0.9073745012283325",
+        "rev": "workspace",
+        "step": "21"
+    },
+    {
+        "precision": "0.9111875295639038",
+        "rev": "workspace",
+        "step": "22"
+    },
+    {
+        "precision": "0.9119977951049805",
+        "rev": "workspace",
+        "step": "23"
+    },
+    {
+        "precision": "0.9158293604850769",
+        "rev": "workspace",
+        "step": "24"
+    },
+    {
+        "precision": "0.9166419506072998",
+        "rev": "workspace",
+        "step": "25"
+    },
+    {
+        "precision": "0.9153956174850464",
+        "rev": "workspace",
+        "step": "26"
+    },
+    {
+        "precision": "0.915843665599823",
+        "rev": "workspace",
+        "step": "27"
+    },
+    {
+        "precision": "0.9188570976257324",
+        "rev": "workspace",
+        "step": "28"
+    },
+    {
+        "precision": "0.9168477654457092",
+        "rev": "workspace",
+        "step": "29"
+    },
+    {
+        "precision": "0.9176859259605408",
+        "rev": "workspace",
+        "step": "30"
+    },
+    {
+        "precision": "0.9204530715942383",
+        "rev": "workspace",
+        "step": "31"
+    },
+    {
+        "precision": "0.9254507422447205",
+        "rev": "workspace",
+        "step": "32"
+    },
+    {
+        "precision": "0.9298766851425171",
+        "rev": "workspace",
+        "step": "33"
+    },
+    {
+        "precision": "0.9305079579353333",
+        "rev": "workspace",
+        "step": "34"
+    },
+    {
+        "precision": "0.9325525164604187",
+        "rev": "workspace",
+        "step": "35"
+    },
+    {
+        "precision": "0.9310770034790039",
+        "rev": "workspace",
+        "step": "36"
+    },
+    {
+        "precision": "0.9363116025924683",
+        "rev": "workspace",
+        "step": "37"
+    },
+    {
+        "precision": "0.9343106150627136",
+        "rev": "workspace",
+        "step": "38"
+    },
+    {
+        "precision": "0.9356572031974792",
+        "rev": "workspace",
+        "step": "39"
+    },
+    {
+        "precision": "0.9285805225372314",
+        "rev": "workspace",
+        "step": "40"
+    },
+    {
+        "precision": "0.9329172372817993",
+        "rev": "workspace",
+        "step": "41"
+    },
+    {
+        "precision": "0.9331915378570557",
+        "rev": "workspace",
+        "step": "42"
+    },
+    {
+        "precision": "0.9374822378158569",
+        "rev": "workspace",
+        "step": "43"
+    },
+    {
+        "precision": "0.9399365782737732",
+        "rev": "workspace",
+        "step": "44"
+    },
+    {
+        "precision": "0.9417300224304199",
+        "rev": "workspace",
+        "step": "45"
+    },
+    {
+        "precision": "0.9433683156967163",
+        "rev": "workspace",
+        "step": "46"
+    },
+    {
+        "precision": "0.9453154802322388",
+        "rev": "workspace",
+        "step": "47"
+    },
+    {
+        "precision": "0.9453625679016113",
+        "rev": "workspace",
+        "step": "48"
+    },
+    {
+        "precision": "0.9468221664428711",
+        "rev": "workspace",
+        "step": "49"
+    },
+    {
+        "precision": "0.9460019469261169",
+        "rev": "workspace",
+        "step": "50"
+    },
+    {
+        "precision": "0.9454599618911743",
+        "rev": "workspace",
+        "step": "51"
+    },
+    {
+        "precision": "0.9455037117004395",
+        "rev": "workspace",
+        "step": "52"
+    },
+    {
+        "precision": "0.9367987513542175",
+        "rev": "workspace",
+        "step": "53"
+    },
+    {
+        "precision": "0.9354317784309387",
+        "rev": "workspace",
+        "step": "54"
+    },
+    {
+        "precision": "0.946910560131073",
+        "rev": "workspace",
+        "step": "55"
+    },
+    {
+        "precision": "0.9490232467651367",
+        "rev": "workspace",
+        "step": "56"
+    },
+    {
+        "precision": "0.9504073858261108",
+        "rev": "workspace",
+        "step": "57"
+    },
+    {
+        "precision": "0.95160311460495",
+        "rev": "workspace",
+        "step": "58"
+    },
+    {
+        "precision": "0.9519275426864624",
+        "rev": "workspace",
+        "step": "59"
+    },
+    {
+        "precision": "0.9541143774986267",
+        "rev": "workspace",
+        "step": "60"
+    },
+    {
+        "precision": "0.9543606638908386",
+        "rev": "workspace",
+        "step": "61"
+    },
+    {
+        "precision": "0.9536377787590027",
+        "rev": "workspace",
+        "step": "62"
+    },
+    {
+        "precision": "0.953236997127533",
+        "rev": "workspace",
+        "step": "63"
+    },
+    {
+        "precision": "0.9532210230827332",
+        "rev": "workspace",
+        "step": "64"
+    },
+    {
+        "precision": "0.9514045715332031",
+        "rev": "workspace",
+        "step": "65"
+    },
+    {
+        "precision": "0.9464185833930969",
+        "rev": "workspace",
+        "step": "66"
+    },
+    {
+        "precision": "0.9503365755081177",
+        "rev": "workspace",
+        "step": "67"
+    },
+    {
+        "precision": "0.936569094657898",
+        "rev": "workspace",
+        "step": "68"
+    },
+    {
+        "precision": "0.9514934420585632",
+        "rev": "workspace",
+        "step": "69"
+    },
+    {
+        "precision": "0.9556755423545837",
+        "rev": "workspace",
+        "step": "70"
+    },
+    {
+        "precision": "0.9582384824752808",
+        "rev": "workspace",
+        "step": "71"
+    },
+    {
+        "precision": "0.9592992067337036",
+        "rev": "workspace",
+        "step": "72"
+    },
+    {
+        "precision": "0.9602787494659424",
+        "rev": "workspace",
+        "step": "73"
+    },
+    {
+        "precision": "0.9601276516914368",
+        "rev": "workspace",
+        "step": "74"
+    },
+    {
+        "precision": "0.959568202495575",
+        "rev": "workspace",
+        "step": "75"
+    },
+    {
+        "precision": "0.9596491456031799",
+        "rev": "workspace",
+        "step": "76"
+    },
+    {
+        "precision": "0.9553484320640564",
+        "rev": "workspace",
+        "step": "77"
+    },
+    {
+        "precision": "0.953637957572937",
+        "rev": "workspace",
+        "step": "78"
+    },
+    {
+        "precision": "0.9548695087432861",
+        "rev": "workspace",
+        "step": "79"
+    },
+    {
+        "precision": "0.955676257610321",
+        "rev": "workspace",
+        "step": "80"
+    },
+    {
+        "precision": "0.9610462784767151",
+        "rev": "workspace",
+        "step": "81"
+    },
+    {
+        "precision": "0.9626055359840393",
+        "rev": "workspace",
+        "step": "82"
+    },
+    {
+        "precision": "0.9632408022880554",
+        "rev": "workspace",
+        "step": "83"
+    },
+    {
+        "precision": "0.9638442993164062",
+        "rev": "workspace",
+        "step": "84"
+    },
+    {
+        "precision": "0.9645166397094727",
+        "rev": "workspace",
+        "step": "85"
+    },
+    {
+        "precision": "0.9652273654937744",
+        "rev": "workspace",
+        "step": "86"
+    },
+    {
+        "precision": "0.9643138647079468",
+        "rev": "workspace",
+        "step": "87"
+    },
+    {
+        "precision": "0.9639209508895874",
+        "rev": "workspace",
+        "step": "88"
+    },
+    {
+        "precision": "0.9586703777313232",
+        "rev": "workspace",
+        "step": "89"
+    },
+    {
+        "precision": "0.9586939811706543",
+        "rev": "workspace",
+        "step": "90"
+    },
+    {
+        "precision": "0.9630821943283081",
+        "rev": "workspace",
+        "step": "91"
+    },
+    {
+        "precision": "0.9655139446258545",
+        "rev": "workspace",
+        "step": "92"
+    },
+    {
+        "precision": "0.9661062955856323",
+        "rev": "workspace",
+        "step": "93"
+    },
+    {
+        "precision": "0.9666405916213989",
+        "rev": "workspace",
+        "step": "94"
+    },
+    {
+        "precision": "0.9676306247711182",
+        "rev": "workspace",
+        "step": "95"
+    },
+    {
+        "precision": "0.9679918885231018",
+        "rev": "workspace",
+        "step": "96"
+    },
+    {
+        "precision": "0.9688133001327515",
+        "rev": "workspace",
+        "step": "97"
+    },
+    {
+        "precision": "0.9692692756652832",
+        "rev": "workspace",
+        "step": "98"
+    },
+    {
+        "precision": "0.9687305688858032",
+        "rev": "workspace",
+        "step": "99"
+    },
+    {
+        "precision": "0.967236340045929",
+        "rev": "workspace",
+        "step": "100"
+    },
+    {
+        "precision": "0.9669733643531799",
+        "rev": "workspace",
+        "step": "101"
+    },
+    {
+        "precision": "0.9368199706077576",
+        "rev": "workspace",
+        "step": "102"
+    },
+    {
+        "precision": "0.9463405013084412",
+        "rev": "workspace",
+        "step": "103"
+    },
+    {
+        "precision": "0.962138831615448",
+        "rev": "workspace",
+        "step": "104"
+    },
+    {
+        "precision": "0.9663591384887695",
+        "rev": "workspace",
+        "step": "105"
+    },
+    {
+        "precision": "0.9683389663696289",
+        "rev": "workspace",
+        "step": "106"
+    },
+    {
+        "precision": "0.9698401689529419",
+        "rev": "workspace",
+        "step": "107"
+    },
+    {
+        "precision": "0.9705643057823181",
+        "rev": "workspace",
+        "step": "108"
+    },
+    {
+        "precision": "0.9709963202476501",
+        "rev": "workspace",
+        "step": "109"
+    },
+    {
+        "precision": "0.971980094909668",
+        "rev": "workspace",
+        "step": "110"
+    },
+    {
+        "precision": "0.9713728427886963",
+        "rev": "workspace",
+        "step": "111"
+    },
+    {
+        "precision": "0.9712310433387756",
+        "rev": "workspace",
+        "step": "112"
+    },
+    {
+        "precision": "0.9699169397354126",
+        "rev": "workspace",
+        "step": "113"
+    },
+    {
+        "precision": "0.9690183401107788",
+        "rev": "workspace",
+        "step": "114"
+    },
+    {
+        "precision": "0.9686924815177917",
+        "rev": "workspace",
+        "step": "115"
+    },
+    {
+        "precision": "0.9650804400444031",
+        "rev": "workspace",
+        "step": "116"
+    },
+    {
+        "precision": "0.9528293013572693",
+        "rev": "workspace",
+        "step": "117"
+    },
+    {
+        "precision": "0.9652066826820374",
+        "rev": "workspace",
+        "step": "118"
+    },
+    {
+        "precision": "0.9704484939575195",
+        "rev": "workspace",
+        "step": "119"
+    },
+    {
+        "precision": "0.9721758961677551",
+        "rev": "workspace",
+        "step": "120"
+    },
+    {
+        "precision": "0.9730395674705505",
+        "rev": "workspace",
+        "step": "121"
+    },
+    {
+        "precision": "0.9734901785850525",
+        "rev": "workspace",
+        "step": "122"
+    },
+    {
+        "precision": "0.9734570384025574",
+        "rev": "workspace",
+        "step": "123"
+    },
+    {
+        "precision": "0.9731005430221558",
+        "rev": "workspace",
+        "step": "124"
+    },
+    {
+        "precision": "0.9721658229827881",
+        "rev": "workspace",
+        "step": "125"
+    },
+    {
+        "precision": "0.9692723155021667",
+        "rev": "workspace",
+        "step": "126"
+    },
+    {
+        "precision": "0.9647176265716553",
+        "rev": "workspace",
+        "step": "127"
+    },
+    {
+        "precision": "0.9478862285614014",
+        "rev": "workspace",
+        "step": "128"
+    }
+]
+    },
+    "title": "train/precision",
+    "width": 300,
+    "height": 300,
+    "params": [
+        {
+            "name": "smooth",
+            "value": 0.001,
+            "bind": {
+                "input": "range",
+                "min": 0.001,
+                "max": 1,
+                "step": 0.001
+            }
+        }
+    ],
+    "layer": [
+        {
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "precision",
+                    "type": "quantitative",
+                    "title": "precision",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "transform": [
+                {
+                    "loess": "precision",
+                    "on": "step",
+                    "groupby": [
+                        "rev",
+                        "filename",
+                        "field",
+                        "filename::field"
+                    ],
+                    "bandwidth": {
+                        "signal": "smooth"
+                    }
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "point",
+                "tooltip": {
+                    "content": "data"
+                }
+            },
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "precision",
+                    "type": "quantitative",
+                    "title": "precision",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            }
+        }
+    ]
+}
+;
+            vegaEmbed('#static_train_precision', spec);
+        </script>
+    </div>
+    
+
+    <div id = "static_eval_one_hot_io_u">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "values": [
+    {
+        "one_hot_io_u": "0.7076854705810547",
+        "rev": "workspace",
+        "step": "0"
+    },
+    {
+        "one_hot_io_u": "0.7109808921813965",
+        "rev": "workspace",
+        "step": "1"
+    },
+    {
+        "one_hot_io_u": "0.71160888671875",
+        "rev": "workspace",
+        "step": "2"
+    },
+    {
+        "one_hot_io_u": "0.734025239944458",
+        "rev": "workspace",
+        "step": "3"
+    },
+    {
+        "one_hot_io_u": "0.7468124032020569",
+        "rev": "workspace",
+        "step": "4"
+    },
+    {
+        "one_hot_io_u": "0.7482728958129883",
+        "rev": "workspace",
+        "step": "5"
+    },
+    {
+        "one_hot_io_u": "0.7128240466117859",
+        "rev": "workspace",
+        "step": "6"
+    },
+    {
+        "one_hot_io_u": "0.7671566009521484",
+        "rev": "workspace",
+        "step": "7"
+    },
+    {
+        "one_hot_io_u": "0.7767138481140137",
+        "rev": "workspace",
+        "step": "8"
+    },
+    {
+        "one_hot_io_u": "0.7689547538757324",
+        "rev": "workspace",
+        "step": "9"
+    },
+    {
+        "one_hot_io_u": "0.7793591022491455",
+        "rev": "workspace",
+        "step": "10"
+    },
+    {
+        "one_hot_io_u": "0.7837070226669312",
+        "rev": "workspace",
+        "step": "11"
+    },
+    {
+        "one_hot_io_u": "0.7891366481781006",
+        "rev": "workspace",
+        "step": "12"
+    },
+    {
+        "one_hot_io_u": "0.7803051471710205",
+        "rev": "workspace",
+        "step": "13"
+    },
+    {
+        "one_hot_io_u": "0.7853314280509949",
+        "rev": "workspace",
+        "step": "14"
+    },
+    {
+        "one_hot_io_u": "0.7795856595039368",
+        "rev": "workspace",
+        "step": "15"
+    },
+    {
+        "one_hot_io_u": "0.7826609015464783",
+        "rev": "workspace",
+        "step": "16"
+    },
+    {
+        "one_hot_io_u": "0.7818992137908936",
+        "rev": "workspace",
+        "step": "17"
+    },
+    {
+        "one_hot_io_u": "0.801882803440094",
+        "rev": "workspace",
+        "step": "18"
+    },
+    {
+        "one_hot_io_u": "0.7971418499946594",
+        "rev": "workspace",
+        "step": "19"
+    },
+    {
+        "one_hot_io_u": "0.7975854873657227",
+        "rev": "workspace",
+        "step": "20"
+    },
+    {
+        "one_hot_io_u": "0.8120092153549194",
+        "rev": "workspace",
+        "step": "21"
+    },
+    {
+        "one_hot_io_u": "0.8100758790969849",
+        "rev": "workspace",
+        "step": "22"
+    },
+    {
+        "one_hot_io_u": "0.8135248422622681",
+        "rev": "workspace",
+        "step": "23"
+    },
+    {
+        "one_hot_io_u": "0.8152931928634644",
+        "rev": "workspace",
+        "step": "24"
+    },
+    {
+        "one_hot_io_u": "0.8155386447906494",
+        "rev": "workspace",
+        "step": "25"
+    },
+    {
+        "one_hot_io_u": "0.8081862330436707",
+        "rev": "workspace",
+        "step": "26"
+    },
+    {
+        "one_hot_io_u": "0.8100934028625488",
+        "rev": "workspace",
+        "step": "27"
+    },
+    {
+        "one_hot_io_u": "0.81391441822052",
+        "rev": "workspace",
+        "step": "28"
+    },
+    {
+        "one_hot_io_u": "0.8040938377380371",
+        "rev": "workspace",
+        "step": "29"
+    },
+    {
+        "one_hot_io_u": "0.8170937299728394",
+        "rev": "workspace",
+        "step": "30"
+    },
+    {
+        "one_hot_io_u": "0.8157017230987549",
+        "rev": "workspace",
+        "step": "31"
+    },
+    {
+        "one_hot_io_u": "0.82203608751297",
+        "rev": "workspace",
+        "step": "32"
+    },
+    {
+        "one_hot_io_u": "0.8281978368759155",
+        "rev": "workspace",
+        "step": "33"
+    },
+    {
+        "one_hot_io_u": "0.8264477252960205",
+        "rev": "workspace",
+        "step": "34"
+    },
+    {
+        "one_hot_io_u": "0.8115372657775879",
+        "rev": "workspace",
+        "step": "35"
+    },
+    {
+        "one_hot_io_u": "0.8255531787872314",
+        "rev": "workspace",
+        "step": "36"
+    },
+    {
+        "one_hot_io_u": "0.832891583442688",
+        "rev": "workspace",
+        "step": "37"
+    },
+    {
+        "one_hot_io_u": "0.8222126960754395",
+        "rev": "workspace",
+        "step": "38"
+    },
+    {
+        "one_hot_io_u": "0.831603467464447",
+        "rev": "workspace",
+        "step": "39"
+    },
+    {
+        "one_hot_io_u": "0.8208808302879333",
+        "rev": "workspace",
+        "step": "40"
+    },
+    {
+        "one_hot_io_u": "0.8321694135665894",
+        "rev": "workspace",
+        "step": "41"
+    },
+    {
+        "one_hot_io_u": "0.8225877285003662",
+        "rev": "workspace",
+        "step": "42"
+    },
+    {
+        "one_hot_io_u": "0.8380329608917236",
+        "rev": "workspace",
+        "step": "43"
+    },
+    {
+        "one_hot_io_u": "0.8350585699081421",
+        "rev": "workspace",
+        "step": "44"
+    },
+    {
+        "one_hot_io_u": "0.8420321941375732",
+        "rev": "workspace",
+        "step": "45"
+    },
+    {
+        "one_hot_io_u": "0.8427830338478088",
+        "rev": "workspace",
+        "step": "46"
+    },
+    {
+        "one_hot_io_u": "0.8414004445075989",
+        "rev": "workspace",
+        "step": "47"
+    },
+    {
+        "one_hot_io_u": "0.8453207612037659",
+        "rev": "workspace",
+        "step": "48"
+    },
+    {
+        "one_hot_io_u": "0.8425830602645874",
+        "rev": "workspace",
+        "step": "49"
+    },
+    {
+        "one_hot_io_u": "0.8417640924453735",
+        "rev": "workspace",
+        "step": "50"
+    },
+    {
+        "one_hot_io_u": "0.833507776260376",
+        "rev": "workspace",
+        "step": "51"
+    },
+    {
+        "one_hot_io_u": "0.8349103927612305",
+        "rev": "workspace",
+        "step": "52"
+    },
+    {
+        "one_hot_io_u": "0.8223544955253601",
+        "rev": "workspace",
+        "step": "53"
+    },
+    {
+        "one_hot_io_u": "0.8376103043556213",
+        "rev": "workspace",
+        "step": "54"
+    },
+    {
+        "one_hot_io_u": "0.837492823600769",
+        "rev": "workspace",
+        "step": "55"
+    },
+    {
+        "one_hot_io_u": "0.8392566442489624",
+        "rev": "workspace",
+        "step": "56"
+    },
+    {
+        "one_hot_io_u": "0.8449361324310303",
+        "rev": "workspace",
+        "step": "57"
+    },
+    {
+        "one_hot_io_u": "0.8430085182189941",
+        "rev": "workspace",
+        "step": "58"
+    },
+    {
+        "one_hot_io_u": "0.8437513113021851",
+        "rev": "workspace",
+        "step": "59"
+    },
+    {
+        "one_hot_io_u": "0.8450901508331299",
+        "rev": "workspace",
+        "step": "60"
+    },
+    {
+        "one_hot_io_u": "0.843646764755249",
+        "rev": "workspace",
+        "step": "61"
+    },
+    {
+        "one_hot_io_u": "0.8461642265319824",
+        "rev": "workspace",
+        "step": "62"
+    },
+    {
+        "one_hot_io_u": "0.8428307771682739",
+        "rev": "workspace",
+        "step": "63"
+    },
+    {
+        "one_hot_io_u": "0.8406120538711548",
+        "rev": "workspace",
+        "step": "64"
+    },
+    {
+        "one_hot_io_u": "0.8386056423187256",
+        "rev": "workspace",
+        "step": "65"
+    },
+    {
+        "one_hot_io_u": "0.8406730890274048",
+        "rev": "workspace",
+        "step": "66"
+    },
+    {
+        "one_hot_io_u": "0.8499059081077576",
+        "rev": "workspace",
+        "step": "67"
+    },
+    {
+        "one_hot_io_u": "0.8312872052192688",
+        "rev": "workspace",
+        "step": "68"
+    },
+    {
+        "one_hot_io_u": "0.845819354057312",
+        "rev": "workspace",
+        "step": "69"
+    },
+    {
+        "one_hot_io_u": "0.8497363328933716",
+        "rev": "workspace",
+        "step": "70"
+    },
+    {
+        "one_hot_io_u": "0.8480405807495117",
+        "rev": "workspace",
+        "step": "71"
+    },
+    {
+        "one_hot_io_u": "0.8481135368347168",
+        "rev": "workspace",
+        "step": "72"
+    },
+    {
+        "one_hot_io_u": "0.8508284091949463",
+        "rev": "workspace",
+        "step": "73"
+    },
+    {
+        "one_hot_io_u": "0.8453765511512756",
+        "rev": "workspace",
+        "step": "74"
+    },
+    {
+        "one_hot_io_u": "0.8515651226043701",
+        "rev": "workspace",
+        "step": "75"
+    },
+    {
+        "one_hot_io_u": "0.8486114740371704",
+        "rev": "workspace",
+        "step": "76"
+    },
+    {
+        "one_hot_io_u": "0.8365146517753601",
+        "rev": "workspace",
+        "step": "77"
+    },
+    {
+        "one_hot_io_u": "0.8429481983184814",
+        "rev": "workspace",
+        "step": "78"
+    },
+    {
+        "one_hot_io_u": "0.8320822715759277",
+        "rev": "workspace",
+        "step": "79"
+    },
+    {
+        "one_hot_io_u": "0.8494571447372437",
+        "rev": "workspace",
+        "step": "80"
+    },
+    {
+        "one_hot_io_u": "0.8502712249755859",
+        "rev": "workspace",
+        "step": "81"
+    },
+    {
+        "one_hot_io_u": "0.8537582159042358",
+        "rev": "workspace",
+        "step": "82"
+    },
+    {
+        "one_hot_io_u": "0.8547705411911011",
+        "rev": "workspace",
+        "step": "83"
+    },
+    {
+        "one_hot_io_u": "0.8552589416503906",
+        "rev": "workspace",
+        "step": "84"
+    },
+    {
+        "one_hot_io_u": "0.8500887751579285",
+        "rev": "workspace",
+        "step": "85"
+    },
+    {
+        "one_hot_io_u": "0.8554031848907471",
+        "rev": "workspace",
+        "step": "86"
+    },
+    {
+        "one_hot_io_u": "0.8505285978317261",
+        "rev": "workspace",
+        "step": "87"
+    },
+    {
+        "one_hot_io_u": "0.8496756553649902",
+        "rev": "workspace",
+        "step": "88"
+    },
+    {
+        "one_hot_io_u": "0.8403049111366272",
+        "rev": "workspace",
+        "step": "89"
+    },
+    {
+        "one_hot_io_u": "0.8458201885223389",
+        "rev": "workspace",
+        "step": "90"
+    },
+    {
+        "one_hot_io_u": "0.8549907207489014",
+        "rev": "workspace",
+        "step": "91"
+    },
+    {
+        "one_hot_io_u": "0.8542748093605042",
+        "rev": "workspace",
+        "step": "92"
+    },
+    {
+        "one_hot_io_u": "0.8579780459403992",
+        "rev": "workspace",
+        "step": "93"
+    },
+    {
+        "one_hot_io_u": "0.8501356840133667",
+        "rev": "workspace",
+        "step": "94"
+    },
+    {
+        "one_hot_io_u": "0.8536858558654785",
+        "rev": "workspace",
+        "step": "95"
+    },
+    {
+        "one_hot_io_u": "0.8497892618179321",
+        "rev": "workspace",
+        "step": "96"
+    },
+    {
+        "one_hot_io_u": "0.854925274848938",
+        "rev": "workspace",
+        "step": "97"
+    },
+    {
+        "one_hot_io_u": "0.8526821136474609",
+        "rev": "workspace",
+        "step": "98"
+    },
+    {
+        "one_hot_io_u": "0.8528945446014404",
+        "rev": "workspace",
+        "step": "99"
+    },
+    {
+        "one_hot_io_u": "0.8497847318649292",
+        "rev": "workspace",
+        "step": "100"
+    },
+    {
+        "one_hot_io_u": "0.8441189527511597",
+        "rev": "workspace",
+        "step": "101"
+    },
+    {
+        "one_hot_io_u": "0.8181753158569336",
+        "rev": "workspace",
+        "step": "102"
+    },
+    {
+        "one_hot_io_u": "0.8435311317443848",
+        "rev": "workspace",
+        "step": "103"
+    },
+    {
+        "one_hot_io_u": "0.8513495326042175",
+        "rev": "workspace",
+        "step": "104"
+    },
+    {
+        "one_hot_io_u": "0.8531891107559204",
+        "rev": "workspace",
+        "step": "105"
+    },
+    {
+        "one_hot_io_u": "0.8568323850631714",
+        "rev": "workspace",
+        "step": "106"
+    },
+    {
+        "one_hot_io_u": "0.8557367920875549",
+        "rev": "workspace",
+        "step": "107"
+    },
+    {
+        "one_hot_io_u": "0.8593040704727173",
+        "rev": "workspace",
+        "step": "108"
+    },
+    {
+        "one_hot_io_u": "0.8540290594100952",
+        "rev": "workspace",
+        "step": "109"
+    },
+    {
+        "one_hot_io_u": "0.8562421798706055",
+        "rev": "workspace",
+        "step": "110"
+    },
+    {
+        "one_hot_io_u": "0.8559304475784302",
+        "rev": "workspace",
+        "step": "111"
+    },
+    {
+        "one_hot_io_u": "0.8567046523094177",
+        "rev": "workspace",
+        "step": "112"
+    },
+    {
+        "one_hot_io_u": "0.8519426584243774",
+        "rev": "workspace",
+        "step": "113"
+    },
+    {
+        "one_hot_io_u": "0.8549717664718628",
+        "rev": "workspace",
+        "step": "114"
+    },
+    {
+        "one_hot_io_u": "0.8478779196739197",
+        "rev": "workspace",
+        "step": "115"
+    },
+    {
+        "one_hot_io_u": "0.7872198820114136",
+        "rev": "workspace",
+        "step": "116"
+    },
+    {
+        "one_hot_io_u": "0.8523991107940674",
+        "rev": "workspace",
+        "step": "117"
+    },
+    {
+        "one_hot_io_u": "0.8565306663513184",
+        "rev": "workspace",
+        "step": "118"
+    },
+    {
+        "one_hot_io_u": "0.8552914261817932",
+        "rev": "workspace",
+        "step": "119"
+    },
+    {
+        "one_hot_io_u": "0.8550403714179993",
+        "rev": "workspace",
+        "step": "120"
+    },
+    {
+        "one_hot_io_u": "0.8596188426017761",
+        "rev": "workspace",
+        "step": "121"
+    },
+    {
+        "one_hot_io_u": "0.858066201210022",
+        "rev": "workspace",
+        "step": "122"
+    },
+    {
+        "one_hot_io_u": "0.859434962272644",
+        "rev": "workspace",
+        "step": "123"
+    },
+    {
+        "one_hot_io_u": "0.8580983877182007",
+        "rev": "workspace",
+        "step": "124"
+    },
+    {
+        "one_hot_io_u": "0.8565607070922852",
+        "rev": "workspace",
+        "step": "125"
+    },
+    {
+        "one_hot_io_u": "0.8504109382629395",
+        "rev": "workspace",
+        "step": "126"
+    },
+    {
+        "one_hot_io_u": "0.8511550426483154",
+        "rev": "workspace",
+        "step": "127"
+    },
+    {
+        "one_hot_io_u": "0.8387174606323242",
+        "rev": "workspace",
+        "step": "128"
+    }
+]
+    },
+    "title": "eval/one_hot_io_u",
+    "width": 300,
+    "height": 300,
+    "params": [
+        {
+            "name": "smooth",
+            "value": 0.001,
+            "bind": {
+                "input": "range",
+                "min": 0.001,
+                "max": 1,
+                "step": 0.001
+            }
+        }
+    ],
+    "layer": [
+        {
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "one_hot_io_u",
+                    "type": "quantitative",
+                    "title": "one_hot_io_u",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "transform": [
+                {
+                    "loess": "one_hot_io_u",
+                    "on": "step",
+                    "groupby": [
+                        "rev",
+                        "filename",
+                        "field",
+                        "filename::field"
+                    ],
+                    "bandwidth": {
+                        "signal": "smooth"
+                    }
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "point",
+                "tooltip": {
+                    "content": "data"
+                }
+            },
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "one_hot_io_u",
+                    "type": "quantitative",
+                    "title": "one_hot_io_u",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            }
+        }
+    ]
+}
+;
+            vegaEmbed('#static_eval_one_hot_io_u', spec);
+        </script>
+    </div>
+    
+
+    <div id = "static_eval_recall">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "values": [
+    {
+        "recall": "0.8310434818267822",
+        "rev": "workspace",
+        "step": "0"
+    },
+    {
+        "recall": "0.8411702513694763",
+        "rev": "workspace",
+        "step": "1"
+    },
+    {
+        "recall": "0.8396461606025696",
+        "rev": "workspace",
+        "step": "2"
+    },
+    {
+        "recall": "0.85084468126297",
+        "rev": "workspace",
+        "step": "3"
+    },
+    {
+        "recall": "0.8617242574691772",
+        "rev": "workspace",
+        "step": "4"
+    },
+    {
+        "recall": "0.8600526452064514",
+        "rev": "workspace",
+        "step": "5"
+    },
+    {
+        "recall": "0.8414384126663208",
+        "rev": "workspace",
+        "step": "6"
+    },
+    {
+        "recall": "0.870389461517334",
+        "rev": "workspace",
+        "step": "7"
+    },
+    {
+        "recall": "0.8783451914787292",
+        "rev": "workspace",
+        "step": "8"
+    },
+    {
+        "recall": "0.8727977275848389",
+        "rev": "workspace",
+        "step": "9"
+    },
+    {
+        "recall": "0.8801542520523071",
+        "rev": "workspace",
+        "step": "10"
+    },
+    {
+        "recall": "0.8819836378097534",
+        "rev": "workspace",
+        "step": "11"
+    },
+    {
+        "recall": "0.8871917724609375",
+        "rev": "workspace",
+        "step": "12"
+    },
+    {
+        "recall": "0.8815658092498779",
+        "rev": "workspace",
+        "step": "13"
+    },
+    {
+        "recall": "0.8818066716194153",
+        "rev": "workspace",
+        "step": "14"
+    },
+    {
+        "recall": "0.8815145492553711",
+        "rev": "workspace",
+        "step": "15"
+    },
+    {
+        "recall": "0.8813166618347168",
+        "rev": "workspace",
+        "step": "16"
+    },
+    {
+        "recall": "0.8810217380523682",
+        "rev": "workspace",
+        "step": "17"
+    },
+    {
+        "recall": "0.8930479884147644",
+        "rev": "workspace",
+        "step": "18"
+    },
+    {
+        "recall": "0.8903436660766602",
+        "rev": "workspace",
+        "step": "19"
+    },
+    {
+        "recall": "0.8908063173294067",
+        "rev": "workspace",
+        "step": "20"
+    },
+    {
+        "recall": "0.8993824124336243",
+        "rev": "workspace",
+        "step": "21"
+    },
+    {
+        "recall": "0.8987269997596741",
+        "rev": "workspace",
+        "step": "22"
+    },
+    {
+        "recall": "0.8998076319694519",
+        "rev": "workspace",
+        "step": "23"
+    },
+    {
+        "recall": "0.9008191227912903",
+        "rev": "workspace",
+        "step": "24"
+    },
+    {
+        "recall": "0.9013431668281555",
+        "rev": "workspace",
+        "step": "25"
+    },
+    {
+        "recall": "0.8968744277954102",
+        "rev": "workspace",
+        "step": "26"
+    },
+    {
+        "recall": "0.8979572653770447",
+        "rev": "workspace",
+        "step": "27"
+    },
+    {
+        "recall": "0.9012311697006226",
+        "rev": "workspace",
+        "step": "28"
+    },
+    {
+        "recall": "0.8950167894363403",
+        "rev": "workspace",
+        "step": "29"
+    },
+    {
+        "recall": "0.9027041792869568",
+        "rev": "workspace",
+        "step": "30"
+    },
+    {
+        "recall": "0.9013916850090027",
+        "rev": "workspace",
+        "step": "31"
+    },
+    {
+        "recall": "0.9048688411712646",
+        "rev": "workspace",
+        "step": "32"
+    },
+    {
+        "recall": "0.9086567759513855",
+        "rev": "workspace",
+        "step": "33"
+    },
+    {
+        "recall": "0.9069622159004211",
+        "rev": "workspace",
+        "step": "34"
+    },
+    {
+        "recall": "0.8986759781837463",
+        "rev": "workspace",
+        "step": "35"
+    },
+    {
+        "recall": "0.9068992733955383",
+        "rev": "workspace",
+        "step": "36"
+    },
+    {
+        "recall": "0.9112627506256104",
+        "rev": "workspace",
+        "step": "37"
+    },
+    {
+        "recall": "0.9045334458351135",
+        "rev": "workspace",
+        "step": "38"
+    },
+    {
+        "recall": "0.9106200337409973",
+        "rev": "workspace",
+        "step": "39"
+    },
+    {
+        "recall": "0.9042518138885498",
+        "rev": "workspace",
+        "step": "40"
+    },
+    {
+        "recall": "0.9107024073600769",
+        "rev": "workspace",
+        "step": "41"
+    },
+    {
+        "recall": "0.9060271382331848",
+        "rev": "workspace",
+        "step": "42"
+    },
+    {
+        "recall": "0.9139571189880371",
+        "rev": "workspace",
+        "step": "43"
+    },
+    {
+        "recall": "0.912494957447052",
+        "rev": "workspace",
+        "step": "44"
+    },
+    {
+        "recall": "0.916651725769043",
+        "rev": "workspace",
+        "step": "45"
+    },
+    {
+        "recall": "0.9170812368392944",
+        "rev": "workspace",
+        "step": "46"
+    },
+    {
+        "recall": "0.9162683486938477",
+        "rev": "workspace",
+        "step": "47"
+    },
+    {
+        "recall": "0.9186946749687195",
+        "rev": "workspace",
+        "step": "48"
+    },
+    {
+        "recall": "0.9167500138282776",
+        "rev": "workspace",
+        "step": "49"
+    },
+    {
+        "recall": "0.9160634875297546",
+        "rev": "workspace",
+        "step": "50"
+    },
+    {
+        "recall": "0.9115509986877441",
+        "rev": "workspace",
+        "step": "51"
+    },
+    {
+        "recall": "0.9130659103393555",
+        "rev": "workspace",
+        "step": "52"
+    },
+    {
+        "recall": "0.9056288003921509",
+        "rev": "workspace",
+        "step": "53"
+    },
+    {
+        "recall": "0.914238691329956",
+        "rev": "workspace",
+        "step": "54"
+    },
+    {
+        "recall": "0.9140157699584961",
+        "rev": "workspace",
+        "step": "55"
+    },
+    {
+        "recall": "0.9153420925140381",
+        "rev": "workspace",
+        "step": "56"
+    },
+    {
+        "recall": "0.91839599609375",
+        "rev": "workspace",
+        "step": "57"
+    },
+    {
+        "recall": "0.9176790714263916",
+        "rev": "workspace",
+        "step": "58"
+    },
+    {
+        "recall": "0.9178590774536133",
+        "rev": "workspace",
+        "step": "59"
+    },
+    {
+        "recall": "0.9181386828422546",
+        "rev": "workspace",
+        "step": "60"
+    },
+    {
+        "recall": "0.9173469543457031",
+        "rev": "workspace",
+        "step": "61"
+    },
+    {
+        "recall": "0.9188147187232971",
+        "rev": "workspace",
+        "step": "62"
+    },
+    {
+        "recall": "0.9172759056091309",
+        "rev": "workspace",
+        "step": "63"
+    },
+    {
+        "recall": "0.9155877232551575",
+        "rev": "workspace",
+        "step": "64"
+    },
+    {
+        "recall": "0.9145768284797668",
+        "rev": "workspace",
+        "step": "65"
+    },
+    {
+        "recall": "0.916141927242279",
+        "rev": "workspace",
+        "step": "66"
+    },
+    {
+        "recall": "0.9211506247520447",
+        "rev": "workspace",
+        "step": "67"
+    },
+    {
+        "recall": "0.9111040830612183",
+        "rev": "workspace",
+        "step": "68"
+    },
+    {
+        "recall": "0.918773353099823",
+        "rev": "workspace",
+        "step": "69"
+    },
+    {
+        "recall": "0.9210303425788879",
+        "rev": "workspace",
+        "step": "70"
+    },
+    {
+        "recall": "0.9197657704353333",
+        "rev": "workspace",
+        "step": "71"
+    },
+    {
+        "recall": "0.920180082321167",
+        "rev": "workspace",
+        "step": "72"
+    },
+    {
+        "recall": "0.9217014908790588",
+        "rev": "workspace",
+        "step": "73"
+    },
+    {
+        "recall": "0.9185743927955627",
+        "rev": "workspace",
+        "step": "74"
+    },
+    {
+        "recall": "0.9220946431159973",
+        "rev": "workspace",
+        "step": "75"
+    },
+    {
+        "recall": "0.9207671284675598",
+        "rev": "workspace",
+        "step": "76"
+    },
+    {
+        "recall": "0.9128546118736267",
+        "rev": "workspace",
+        "step": "77"
+    },
+    {
+        "recall": "0.917023777961731",
+        "rev": "workspace",
+        "step": "78"
+    },
+    {
+        "recall": "0.9106054306030273",
+        "rev": "workspace",
+        "step": "79"
+    },
+    {
+        "recall": "0.9212458729743958",
+        "rev": "workspace",
+        "step": "80"
+    },
+    {
+        "recall": "0.9211481213569641",
+        "rev": "workspace",
+        "step": "81"
+    },
+    {
+        "recall": "0.923159658908844",
+        "rev": "workspace",
+        "step": "82"
+    },
+    {
+        "recall": "0.9237656593322754",
+        "rev": "workspace",
+        "step": "83"
+    },
+    {
+        "recall": "0.924471378326416",
+        "rev": "workspace",
+        "step": "84"
+    },
+    {
+        "recall": "0.9211311340332031",
+        "rev": "workspace",
+        "step": "85"
+    },
+    {
+        "recall": "0.9245486855506897",
+        "rev": "workspace",
+        "step": "86"
+    },
+    {
+        "recall": "0.9214247465133667",
+        "rev": "workspace",
+        "step": "87"
+    },
+    {
+        "recall": "0.9211187362670898",
+        "rev": "workspace",
+        "step": "88"
+    },
+    {
+        "recall": "0.9159252643585205",
+        "rev": "workspace",
+        "step": "89"
+    },
+    {
+        "recall": "0.9186890721321106",
+        "rev": "workspace",
+        "step": "90"
+    },
+    {
+        "recall": "0.9243924617767334",
+        "rev": "workspace",
+        "step": "91"
+    },
+    {
+        "recall": "0.9235194325447083",
+        "rev": "workspace",
+        "step": "92"
+    },
+    {
+        "recall": "0.925538182258606",
+        "rev": "workspace",
+        "step": "93"
+    },
+    {
+        "recall": "0.9209995865821838",
+        "rev": "workspace",
+        "step": "94"
+    },
+    {
+        "recall": "0.9235436916351318",
+        "rev": "workspace",
+        "step": "95"
+    },
+    {
+        "recall": "0.9206823110580444",
+        "rev": "workspace",
+        "step": "96"
+    },
+    {
+        "recall": "0.9236079454421997",
+        "rev": "workspace",
+        "step": "97"
+    },
+    {
+        "recall": "0.92269366979599",
+        "rev": "workspace",
+        "step": "98"
+    },
+    {
+        "recall": "0.9224985241889954",
+        "rev": "workspace",
+        "step": "99"
+    },
+    {
+        "recall": "0.9213925004005432",
+        "rev": "workspace",
+        "step": "100"
+    },
+    {
+        "recall": "0.9177034497261047",
+        "rev": "workspace",
+        "step": "101"
+    },
+    {
+        "recall": "0.902927041053772",
+        "rev": "workspace",
+        "step": "102"
+    },
+    {
+        "recall": "0.917069137096405",
+        "rev": "workspace",
+        "step": "103"
+    },
+    {
+        "recall": "0.9219001531600952",
+        "rev": "workspace",
+        "step": "104"
+    },
+    {
+        "recall": "0.9229428172111511",
+        "rev": "workspace",
+        "step": "105"
+    },
+    {
+        "recall": "0.924790620803833",
+        "rev": "workspace",
+        "step": "106"
+    },
+    {
+        "recall": "0.9242166876792908",
+        "rev": "workspace",
+        "step": "107"
+    },
+    {
+        "recall": "0.9268407225608826",
+        "rev": "workspace",
+        "step": "108"
+    },
+    {
+        "recall": "0.9234229922294617",
+        "rev": "workspace",
+        "step": "109"
+    },
+    {
+        "recall": "0.9248214960098267",
+        "rev": "workspace",
+        "step": "110"
+    },
+    {
+        "recall": "0.924274742603302",
+        "rev": "workspace",
+        "step": "111"
+    },
+    {
+        "recall": "0.9250051379203796",
+        "rev": "workspace",
+        "step": "112"
+    },
+    {
+        "recall": "0.9220001101493835",
+        "rev": "workspace",
+        "step": "113"
+    },
+    {
+        "recall": "0.9239316582679749",
+        "rev": "workspace",
+        "step": "114"
+    },
+    {
+        "recall": "0.919522762298584",
+        "rev": "workspace",
+        "step": "115"
+    },
+    {
+        "recall": "0.8846381306648254",
+        "rev": "workspace",
+        "step": "116"
+    },
+    {
+        "recall": "0.9222221374511719",
+        "rev": "workspace",
+        "step": "117"
+    },
+    {
+        "recall": "0.9248053431510925",
+        "rev": "workspace",
+        "step": "118"
+    },
+    {
+        "recall": "0.9241549968719482",
+        "rev": "workspace",
+        "step": "119"
+    },
+    {
+        "recall": "0.9239866733551025",
+        "rev": "workspace",
+        "step": "120"
+    },
+    {
+        "recall": "0.9268172979354858",
+        "rev": "workspace",
+        "step": "121"
+    },
+    {
+        "recall": "0.9256641864776611",
+        "rev": "workspace",
+        "step": "122"
+    },
+    {
+        "recall": "0.9263013601303101",
+        "rev": "workspace",
+        "step": "123"
+    },
+    {
+        "recall": "0.9254547357559204",
+        "rev": "workspace",
+        "step": "124"
+    },
+    {
+        "recall": "0.9252419471740723",
+        "rev": "workspace",
+        "step": "125"
+    },
+    {
+        "recall": "0.921664297580719",
+        "rev": "workspace",
+        "step": "126"
+    },
+    {
+        "recall": "0.9219672083854675",
+        "rev": "workspace",
+        "step": "127"
+    },
+    {
+        "recall": "0.9148514866828918",
+        "rev": "workspace",
+        "step": "128"
+    }
+]
+    },
+    "title": "eval/recall",
+    "width": 300,
+    "height": 300,
+    "params": [
+        {
+            "name": "smooth",
+            "value": 0.001,
+            "bind": {
+                "input": "range",
+                "min": 0.001,
+                "max": 1,
+                "step": 0.001
+            }
+        }
+    ],
+    "layer": [
+        {
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "recall",
+                    "type": "quantitative",
+                    "title": "recall",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "transform": [
+                {
+                    "loess": "recall",
+                    "on": "step",
+                    "groupby": [
+                        "rev",
+                        "filename",
+                        "field",
+                        "filename::field"
+                    ],
+                    "bandwidth": {
+                        "signal": "smooth"
+                    }
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "point",
+                "tooltip": {
+                    "content": "data"
+                }
+            },
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "recall",
+                    "type": "quantitative",
+                    "title": "recall",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            }
+        }
+    ]
+}
+;
+            vegaEmbed('#static_eval_recall', spec);
+        </script>
+    </div>
+    
+
+    <div id = "static_eval_loss">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "values": [
+    {
+        "loss": "0.13645997643470764",
+        "rev": "workspace",
+        "step": "0"
+    },
+    {
+        "loss": "0.1275734007358551",
+        "rev": "workspace",
+        "step": "1"
+    },
+    {
+        "loss": "0.13251318037509918",
+        "rev": "workspace",
+        "step": "2"
+    },
+    {
+        "loss": "0.12029872834682465",
+        "rev": "workspace",
+        "step": "3"
+    },
+    {
+        "loss": "0.11160790920257568",
+        "rev": "workspace",
+        "step": "4"
+    },
+    {
+        "loss": "0.11280730366706848",
+        "rev": "workspace",
+        "step": "5"
+    },
+    {
+        "loss": "0.1282552182674408",
+        "rev": "workspace",
+        "step": "6"
+    },
+    {
+        "loss": "0.10336372256278992",
+        "rev": "workspace",
+        "step": "7"
+    },
+    {
+        "loss": "0.0984337255358696",
+        "rev": "workspace",
+        "step": "8"
+    },
+    {
+        "loss": "0.10128582268953323",
+        "rev": "workspace",
+        "step": "9"
+    },
+    {
+        "loss": "0.09662222117185593",
+        "rev": "workspace",
+        "step": "10"
+    },
+    {
+        "loss": "0.09348157793283463",
+        "rev": "workspace",
+        "step": "11"
+    },
+    {
+        "loss": "0.08996982127428055",
+        "rev": "workspace",
+        "step": "12"
+    },
+    {
+        "loss": "0.09513112157583237",
+        "rev": "workspace",
+        "step": "13"
+    },
+    {
+        "loss": "0.09331760555505753",
+        "rev": "workspace",
+        "step": "14"
+    },
+    {
+        "loss": "0.09483230113983154",
+        "rev": "workspace",
+        "step": "15"
+    },
+    {
+        "loss": "0.0943215936422348",
+        "rev": "workspace",
+        "step": "16"
+    },
+    {
+        "loss": "0.09574683755636215",
+        "rev": "workspace",
+        "step": "17"
+    },
+    {
+        "loss": "0.08586388826370239",
+        "rev": "workspace",
+        "step": "18"
+    },
+    {
+        "loss": "0.08790715783834457",
+        "rev": "workspace",
+        "step": "19"
+    },
+    {
+        "loss": "0.08680348843336105",
+        "rev": "workspace",
+        "step": "20"
+    },
+    {
+        "loss": "0.08052895218133926",
+        "rev": "workspace",
+        "step": "21"
+    },
+    {
+        "loss": "0.08028153330087662",
+        "rev": "workspace",
+        "step": "22"
+    },
+    {
+        "loss": "0.07892149686813354",
+        "rev": "workspace",
+        "step": "23"
+    },
+    {
+        "loss": "0.07896266877651215",
+        "rev": "workspace",
+        "step": "24"
+    },
+    {
+        "loss": "0.07817254960536957",
+        "rev": "workspace",
+        "step": "25"
+    },
+    {
+        "loss": "0.0823342427611351",
+        "rev": "workspace",
+        "step": "26"
+    },
+    {
+        "loss": "0.08219702541828156",
+        "rev": "workspace",
+        "step": "27"
+    },
+    {
+        "loss": "0.07919269055128098",
+        "rev": "workspace",
+        "step": "28"
+    },
+    {
+        "loss": "0.08466320484876633",
+        "rev": "workspace",
+        "step": "29"
+    },
+    {
+        "loss": "0.07823166251182556",
+        "rev": "workspace",
+        "step": "30"
+    },
+    {
+        "loss": "0.07799920439720154",
+        "rev": "workspace",
+        "step": "31"
+    },
+    {
+        "loss": "0.07568299770355225",
+        "rev": "workspace",
+        "step": "32"
+    },
+    {
+        "loss": "0.07227182388305664",
+        "rev": "workspace",
+        "step": "33"
+    },
+    {
+        "loss": "0.07357531040906906",
+        "rev": "workspace",
+        "step": "34"
+    },
+    {
+        "loss": "0.08144430071115494",
+        "rev": "workspace",
+        "step": "35"
+    },
+    {
+        "loss": "0.07467488944530487",
+        "rev": "workspace",
+        "step": "36"
+    },
+    {
+        "loss": "0.0702892616391182",
+        "rev": "workspace",
+        "step": "37"
+    },
+    {
+        "loss": "0.07606161385774612",
+        "rev": "workspace",
+        "step": "38"
+    },
+    {
+        "loss": "0.0710487887263298",
+        "rev": "workspace",
+        "step": "39"
+    },
+    {
+        "loss": "0.07598964124917984",
+        "rev": "workspace",
+        "step": "40"
+    },
+    {
+        "loss": "0.07092724740505219",
+        "rev": "workspace",
+        "step": "41"
+    },
+    {
+        "loss": "0.0757015123963356",
+        "rev": "workspace",
+        "step": "42"
+    },
+    {
+        "loss": "0.06835854053497314",
+        "rev": "workspace",
+        "step": "43"
+    },
+    {
+        "loss": "0.06937496364116669",
+        "rev": "workspace",
+        "step": "44"
+    },
+    {
+        "loss": "0.066346675157547",
+        "rev": "workspace",
+        "step": "45"
+    },
+    {
+        "loss": "0.06584232300519943",
+        "rev": "workspace",
+        "step": "46"
+    },
+    {
+        "loss": "0.06648320704698563",
+        "rev": "workspace",
+        "step": "47"
+    },
+    {
+        "loss": "0.06445486843585968",
+        "rev": "workspace",
+        "step": "48"
+    },
+    {
+        "loss": "0.06629359722137451",
+        "rev": "workspace",
+        "step": "49"
+    },
+    {
+        "loss": "0.06688622385263443",
+        "rev": "workspace",
+        "step": "50"
+    },
+    {
+        "loss": "0.07091198116540909",
+        "rev": "workspace",
+        "step": "51"
+    },
+    {
+        "loss": "0.06952224671840668",
+        "rev": "workspace",
+        "step": "52"
+    },
+    {
+        "loss": "0.07536216080188751",
+        "rev": "workspace",
+        "step": "53"
+    },
+    {
+        "loss": "0.06860414892435074",
+        "rev": "workspace",
+        "step": "54"
+    },
+    {
+        "loss": "0.06812786310911179",
+        "rev": "workspace",
+        "step": "55"
+    },
+    {
+        "loss": "0.06727152317762375",
+        "rev": "workspace",
+        "step": "56"
+    },
+    {
+        "loss": "0.06541678309440613",
+        "rev": "workspace",
+        "step": "57"
+    },
+    {
+        "loss": "0.06611413508653641",
+        "rev": "workspace",
+        "step": "58"
+    },
+    {
+        "loss": "0.06558972597122192",
+        "rev": "workspace",
+        "step": "59"
+    },
+    {
+        "loss": "0.06547197699546814",
+        "rev": "workspace",
+        "step": "60"
+    },
+    {
+        "loss": "0.06621900945901871",
+        "rev": "workspace",
+        "step": "61"
+    },
+    {
+        "loss": "0.06468940526247025",
+        "rev": "workspace",
+        "step": "62"
+    },
+    {
+        "loss": "0.06665747612714767",
+        "rev": "workspace",
+        "step": "63"
+    },
+    {
+        "loss": "0.06776880472898483",
+        "rev": "workspace",
+        "step": "64"
+    },
+    {
+        "loss": "0.0678759291768074",
+        "rev": "workspace",
+        "step": "65"
+    },
+    {
+        "loss": "0.06670059263706207",
+        "rev": "workspace",
+        "step": "66"
+    },
+    {
+        "loss": "0.06285804510116577",
+        "rev": "workspace",
+        "step": "67"
+    },
+    {
+        "loss": "0.07124218344688416",
+        "rev": "workspace",
+        "step": "68"
+    },
+    {
+        "loss": "0.0649900883436203",
+        "rev": "workspace",
+        "step": "69"
+    },
+    {
+        "loss": "0.06325577944517136",
+        "rev": "workspace",
+        "step": "70"
+    },
+    {
+        "loss": "0.06436111778020859",
+        "rev": "workspace",
+        "step": "71"
+    },
+    {
+        "loss": "0.0642680898308754",
+        "rev": "workspace",
+        "step": "72"
+    },
+    {
+        "loss": "0.06276500225067139",
+        "rev": "workspace",
+        "step": "73"
+    },
+    {
+        "loss": "0.06568208336830139",
+        "rev": "workspace",
+        "step": "74"
+    },
+    {
+        "loss": "0.06250489503145218",
+        "rev": "workspace",
+        "step": "75"
+    },
+    {
+        "loss": "0.06381485611200333",
+        "rev": "workspace",
+        "step": "76"
+    },
+    {
+        "loss": "0.06983216106891632",
+        "rev": "workspace",
+        "step": "77"
+    },
+    {
+        "loss": "0.06675534695386887",
+        "rev": "workspace",
+        "step": "78"
+    },
+    {
+        "loss": "0.07160869240760803",
+        "rev": "workspace",
+        "step": "79"
+    },
+    {
+        "loss": "0.06322000920772552",
+        "rev": "workspace",
+        "step": "80"
+    },
+    {
+        "loss": "0.06329894065856934",
+        "rev": "workspace",
+        "step": "81"
+    },
+    {
+        "loss": "0.06171749159693718",
+        "rev": "workspace",
+        "step": "82"
+    },
+    {
+        "loss": "0.06133364140987396",
+        "rev": "workspace",
+        "step": "83"
+    },
+    {
+        "loss": "0.061115000396966934",
+        "rev": "workspace",
+        "step": "84"
+    },
+    {
+        "loss": "0.06364951282739639",
+        "rev": "workspace",
+        "step": "85"
+    },
+    {
+        "loss": "0.060869380831718445",
+        "rev": "workspace",
+        "step": "86"
+    },
+    {
+        "loss": "0.06365486234426498",
+        "rev": "workspace",
+        "step": "87"
+    },
+    {
+        "loss": "0.06425849348306656",
+        "rev": "workspace",
+        "step": "88"
+    },
+    {
+        "loss": "0.06835158169269562",
+        "rev": "workspace",
+        "step": "89"
+    },
+    {
+        "loss": "0.06568428874015808",
+        "rev": "workspace",
+        "step": "90"
+    },
+    {
+        "loss": "0.06131644919514656",
+        "rev": "workspace",
+        "step": "91"
+    },
+    {
+        "loss": "0.062050968408584595",
+        "rev": "workspace",
+        "step": "92"
+    },
+    {
+        "loss": "0.0603259913623333",
+        "rev": "workspace",
+        "step": "93"
+    },
+    {
+        "loss": "0.06426451355218887",
+        "rev": "workspace",
+        "step": "94"
+    },
+    {
+        "loss": "0.06223903223872185",
+        "rev": "workspace",
+        "step": "95"
+    },
+    {
+        "loss": "0.06463658809661865",
+        "rev": "workspace",
+        "step": "96"
+    },
+    {
+        "loss": "0.06221538409590721",
+        "rev": "workspace",
+        "step": "97"
+    },
+    {
+        "loss": "0.06324370205402374",
+        "rev": "workspace",
+        "step": "98"
+    },
+    {
+        "loss": "0.06349509209394455",
+        "rev": "workspace",
+        "step": "99"
+    },
+    {
+        "loss": "0.0641283467411995",
+        "rev": "workspace",
+        "step": "100"
+    },
+    {
+        "loss": "0.06741276383399963",
+        "rev": "workspace",
+        "step": "101"
+    },
+    {
+        "loss": "0.07880379259586334",
+        "rev": "workspace",
+        "step": "102"
+    },
+    {
+        "loss": "0.06702530384063721",
+        "rev": "workspace",
+        "step": "103"
+    },
+    {
+        "loss": "0.06329000741243362",
+        "rev": "workspace",
+        "step": "104"
+    },
+    {
+        "loss": "0.06262620538473129",
+        "rev": "workspace",
+        "step": "105"
+    },
+    {
+        "loss": "0.060857199132442474",
+        "rev": "workspace",
+        "step": "106"
+    },
+    {
+        "loss": "0.06182806193828583",
+        "rev": "workspace",
+        "step": "107"
+    },
+    {
+        "loss": "0.05972042679786682",
+        "rev": "workspace",
+        "step": "108"
+    },
+    {
+        "loss": "0.06290511041879654",
+        "rev": "workspace",
+        "step": "109"
+    },
+    {
+        "loss": "0.06156173348426819",
+        "rev": "workspace",
+        "step": "110"
+    },
+    {
+        "loss": "0.06221463158726692",
+        "rev": "workspace",
+        "step": "111"
+    },
+    {
+        "loss": "0.06144377961754799",
+        "rev": "workspace",
+        "step": "112"
+    },
+    {
+        "loss": "0.06423786282539368",
+        "rev": "workspace",
+        "step": "113"
+    },
+    {
+        "loss": "0.061846133321523666",
+        "rev": "workspace",
+        "step": "114"
+    },
+    {
+        "loss": "0.06596208363771439",
+        "rev": "workspace",
+        "step": "115"
+    },
+    {
+        "loss": "0.09961500018835068",
+        "rev": "workspace",
+        "step": "116"
+    },
+    {
+        "loss": "0.06318674236536026",
+        "rev": "workspace",
+        "step": "117"
+    },
+    {
+        "loss": "0.06095605716109276",
+        "rev": "workspace",
+        "step": "118"
+    },
+    {
+        "loss": "0.06211240589618683",
+        "rev": "workspace",
+        "step": "119"
+    },
+    {
+        "loss": "0.062433283776044846",
+        "rev": "workspace",
+        "step": "120"
+    },
+    {
+        "loss": "0.060036320239305496",
+        "rev": "workspace",
+        "step": "121"
+    },
+    {
+        "loss": "0.06110672280192375",
+        "rev": "workspace",
+        "step": "122"
+    },
+    {
+        "loss": "0.0605868399143219",
+        "rev": "workspace",
+        "step": "123"
+    },
+    {
+        "loss": "0.06126014143228531",
+        "rev": "workspace",
+        "step": "124"
+    },
+    {
+        "loss": "0.06164202094078064",
+        "rev": "workspace",
+        "step": "125"
+    },
+    {
+        "loss": "0.06456156820058823",
+        "rev": "workspace",
+        "step": "126"
+    },
+    {
+        "loss": "0.0641879141330719",
+        "rev": "workspace",
+        "step": "127"
+    },
+    {
+        "loss": "0.06855417042970657",
+        "rev": "workspace",
+        "step": "128"
+    }
+]
+    },
+    "title": "eval/loss",
+    "width": 300,
+    "height": 300,
+    "params": [
+        {
+            "name": "smooth",
+            "value": 0.001,
+            "bind": {
+                "input": "range",
+                "min": 0.001,
+                "max": 1,
+                "step": 0.001
+            }
+        }
+    ],
+    "layer": [
+        {
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "loss",
+                    "type": "quantitative",
+                    "title": "loss",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "transform": [
+                {
+                    "loess": "loss",
+                    "on": "step",
+                    "groupby": [
+                        "rev",
+                        "filename",
+                        "field",
+                        "filename::field"
+                    ],
+                    "bandwidth": {
+                        "signal": "smooth"
+                    }
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "point",
+                "tooltip": {
+                    "content": "data"
+                }
+            },
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "loss",
+                    "type": "quantitative",
+                    "title": "loss",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            }
+        }
+    ]
+}
+;
+            vegaEmbed('#static_eval_loss', spec);
+        </script>
+    </div>
+    
+
+    <div id = "static_eval_precision">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "values": [
+    {
+        "precision": "0.8310434818267822",
+        "rev": "workspace",
+        "step": "0"
+    },
+    {
+        "precision": "0.8411702513694763",
+        "rev": "workspace",
+        "step": "1"
+    },
+    {
+        "precision": "0.8396461606025696",
+        "rev": "workspace",
+        "step": "2"
+    },
+    {
+        "precision": "0.85084468126297",
+        "rev": "workspace",
+        "step": "3"
+    },
+    {
+        "precision": "0.8617242574691772",
+        "rev": "workspace",
+        "step": "4"
+    },
+    {
+        "precision": "0.8600526452064514",
+        "rev": "workspace",
+        "step": "5"
+    },
+    {
+        "precision": "0.8414384126663208",
+        "rev": "workspace",
+        "step": "6"
+    },
+    {
+        "precision": "0.870389461517334",
+        "rev": "workspace",
+        "step": "7"
+    },
+    {
+        "precision": "0.8783451914787292",
+        "rev": "workspace",
+        "step": "8"
+    },
+    {
+        "precision": "0.8727977275848389",
+        "rev": "workspace",
+        "step": "9"
+    },
+    {
+        "precision": "0.8801542520523071",
+        "rev": "workspace",
+        "step": "10"
+    },
+    {
+        "precision": "0.8819836378097534",
+        "rev": "workspace",
+        "step": "11"
+    },
+    {
+        "precision": "0.8871917724609375",
+        "rev": "workspace",
+        "step": "12"
+    },
+    {
+        "precision": "0.8815658092498779",
+        "rev": "workspace",
+        "step": "13"
+    },
+    {
+        "precision": "0.8818066716194153",
+        "rev": "workspace",
+        "step": "14"
+    },
+    {
+        "precision": "0.8815145492553711",
+        "rev": "workspace",
+        "step": "15"
+    },
+    {
+        "precision": "0.8813166618347168",
+        "rev": "workspace",
+        "step": "16"
+    },
+    {
+        "precision": "0.8810217380523682",
+        "rev": "workspace",
+        "step": "17"
+    },
+    {
+        "precision": "0.8930479884147644",
+        "rev": "workspace",
+        "step": "18"
+    },
+    {
+        "precision": "0.8903436660766602",
+        "rev": "workspace",
+        "step": "19"
+    },
+    {
+        "precision": "0.8908063173294067",
+        "rev": "workspace",
+        "step": "20"
+    },
+    {
+        "precision": "0.8993824124336243",
+        "rev": "workspace",
+        "step": "21"
+    },
+    {
+        "precision": "0.8987269997596741",
+        "rev": "workspace",
+        "step": "22"
+    },
+    {
+        "precision": "0.8998076319694519",
+        "rev": "workspace",
+        "step": "23"
+    },
+    {
+        "precision": "0.9008191227912903",
+        "rev": "workspace",
+        "step": "24"
+    },
+    {
+        "precision": "0.9013431668281555",
+        "rev": "workspace",
+        "step": "25"
+    },
+    {
+        "precision": "0.8968744277954102",
+        "rev": "workspace",
+        "step": "26"
+    },
+    {
+        "precision": "0.8979573845863342",
+        "rev": "workspace",
+        "step": "27"
+    },
+    {
+        "precision": "0.9012311697006226",
+        "rev": "workspace",
+        "step": "28"
+    },
+    {
+        "precision": "0.8950167894363403",
+        "rev": "workspace",
+        "step": "29"
+    },
+    {
+        "precision": "0.9027041792869568",
+        "rev": "workspace",
+        "step": "30"
+    },
+    {
+        "precision": "0.9013916850090027",
+        "rev": "workspace",
+        "step": "31"
+    },
+    {
+        "precision": "0.9048688411712646",
+        "rev": "workspace",
+        "step": "32"
+    },
+    {
+        "precision": "0.9086567759513855",
+        "rev": "workspace",
+        "step": "33"
+    },
+    {
+        "precision": "0.9069622159004211",
+        "rev": "workspace",
+        "step": "34"
+    },
+    {
+        "precision": "0.8986760973930359",
+        "rev": "workspace",
+        "step": "35"
+    },
+    {
+        "precision": "0.9068992733955383",
+        "rev": "workspace",
+        "step": "36"
+    },
+    {
+        "precision": "0.9112627506256104",
+        "rev": "workspace",
+        "step": "37"
+    },
+    {
+        "precision": "0.9045334458351135",
+        "rev": "workspace",
+        "step": "38"
+    },
+    {
+        "precision": "0.9106200337409973",
+        "rev": "workspace",
+        "step": "39"
+    },
+    {
+        "precision": "0.9042518138885498",
+        "rev": "workspace",
+        "step": "40"
+    },
+    {
+        "precision": "0.9107024073600769",
+        "rev": "workspace",
+        "step": "41"
+    },
+    {
+        "precision": "0.9060271382331848",
+        "rev": "workspace",
+        "step": "42"
+    },
+    {
+        "precision": "0.9139571189880371",
+        "rev": "workspace",
+        "step": "43"
+    },
+    {
+        "precision": "0.912494957447052",
+        "rev": "workspace",
+        "step": "44"
+    },
+    {
+        "precision": "0.916651725769043",
+        "rev": "workspace",
+        "step": "45"
+    },
+    {
+        "precision": "0.9170812368392944",
+        "rev": "workspace",
+        "step": "46"
+    },
+    {
+        "precision": "0.9162683486938477",
+        "rev": "workspace",
+        "step": "47"
+    },
+    {
+        "precision": "0.9186946749687195",
+        "rev": "workspace",
+        "step": "48"
+    },
+    {
+        "precision": "0.9167500138282776",
+        "rev": "workspace",
+        "step": "49"
+    },
+    {
+        "precision": "0.9160634875297546",
+        "rev": "workspace",
+        "step": "50"
+    },
+    {
+        "precision": "0.9115509986877441",
+        "rev": "workspace",
+        "step": "51"
+    },
+    {
+        "precision": "0.9130659103393555",
+        "rev": "workspace",
+        "step": "52"
+    },
+    {
+        "precision": "0.9056288003921509",
+        "rev": "workspace",
+        "step": "53"
+    },
+    {
+        "precision": "0.914238691329956",
+        "rev": "workspace",
+        "step": "54"
+    },
+    {
+        "precision": "0.9140157699584961",
+        "rev": "workspace",
+        "step": "55"
+    },
+    {
+        "precision": "0.9153420925140381",
+        "rev": "workspace",
+        "step": "56"
+    },
+    {
+        "precision": "0.91839599609375",
+        "rev": "workspace",
+        "step": "57"
+    },
+    {
+        "precision": "0.9176790714263916",
+        "rev": "workspace",
+        "step": "58"
+    },
+    {
+        "precision": "0.9178590774536133",
+        "rev": "workspace",
+        "step": "59"
+    },
+    {
+        "precision": "0.9181386828422546",
+        "rev": "workspace",
+        "step": "60"
+    },
+    {
+        "precision": "0.9173469543457031",
+        "rev": "workspace",
+        "step": "61"
+    },
+    {
+        "precision": "0.9188147187232971",
+        "rev": "workspace",
+        "step": "62"
+    },
+    {
+        "precision": "0.9172759056091309",
+        "rev": "workspace",
+        "step": "63"
+    },
+    {
+        "precision": "0.9155877232551575",
+        "rev": "workspace",
+        "step": "64"
+    },
+    {
+        "precision": "0.9145768284797668",
+        "rev": "workspace",
+        "step": "65"
+    },
+    {
+        "precision": "0.916141927242279",
+        "rev": "workspace",
+        "step": "66"
+    },
+    {
+        "precision": "0.9211506247520447",
+        "rev": "workspace",
+        "step": "67"
+    },
+    {
+        "precision": "0.9111040830612183",
+        "rev": "workspace",
+        "step": "68"
+    },
+    {
+        "precision": "0.918773353099823",
+        "rev": "workspace",
+        "step": "69"
+    },
+    {
+        "precision": "0.9210303425788879",
+        "rev": "workspace",
+        "step": "70"
+    },
+    {
+        "precision": "0.9197657704353333",
+        "rev": "workspace",
+        "step": "71"
+    },
+    {
+        "precision": "0.920180082321167",
+        "rev": "workspace",
+        "step": "72"
+    },
+    {
+        "precision": "0.9217014908790588",
+        "rev": "workspace",
+        "step": "73"
+    },
+    {
+        "precision": "0.9185743927955627",
+        "rev": "workspace",
+        "step": "74"
+    },
+    {
+        "precision": "0.9220946431159973",
+        "rev": "workspace",
+        "step": "75"
+    },
+    {
+        "precision": "0.9207671284675598",
+        "rev": "workspace",
+        "step": "76"
+    },
+    {
+        "precision": "0.9128546118736267",
+        "rev": "workspace",
+        "step": "77"
+    },
+    {
+        "precision": "0.917023777961731",
+        "rev": "workspace",
+        "step": "78"
+    },
+    {
+        "precision": "0.9106054306030273",
+        "rev": "workspace",
+        "step": "79"
+    },
+    {
+        "precision": "0.9212458729743958",
+        "rev": "workspace",
+        "step": "80"
+    },
+    {
+        "precision": "0.9211481213569641",
+        "rev": "workspace",
+        "step": "81"
+    },
+    {
+        "precision": "0.923159658908844",
+        "rev": "workspace",
+        "step": "82"
+    },
+    {
+        "precision": "0.9237656593322754",
+        "rev": "workspace",
+        "step": "83"
+    },
+    {
+        "precision": "0.924471378326416",
+        "rev": "workspace",
+        "step": "84"
+    },
+    {
+        "precision": "0.9211311340332031",
+        "rev": "workspace",
+        "step": "85"
+    },
+    {
+        "precision": "0.9245486855506897",
+        "rev": "workspace",
+        "step": "86"
+    },
+    {
+        "precision": "0.9214247465133667",
+        "rev": "workspace",
+        "step": "87"
+    },
+    {
+        "precision": "0.9211187362670898",
+        "rev": "workspace",
+        "step": "88"
+    },
+    {
+        "precision": "0.9159252643585205",
+        "rev": "workspace",
+        "step": "89"
+    },
+    {
+        "precision": "0.9186890721321106",
+        "rev": "workspace",
+        "step": "90"
+    },
+    {
+        "precision": "0.9243924617767334",
+        "rev": "workspace",
+        "step": "91"
+    },
+    {
+        "precision": "0.9235194325447083",
+        "rev": "workspace",
+        "step": "92"
+    },
+    {
+        "precision": "0.925538182258606",
+        "rev": "workspace",
+        "step": "93"
+    },
+    {
+        "precision": "0.9209995865821838",
+        "rev": "workspace",
+        "step": "94"
+    },
+    {
+        "precision": "0.9235436916351318",
+        "rev": "workspace",
+        "step": "95"
+    },
+    {
+        "precision": "0.9206823110580444",
+        "rev": "workspace",
+        "step": "96"
+    },
+    {
+        "precision": "0.9236079454421997",
+        "rev": "workspace",
+        "step": "97"
+    },
+    {
+        "precision": "0.92269366979599",
+        "rev": "workspace",
+        "step": "98"
+    },
+    {
+        "precision": "0.9224986433982849",
+        "rev": "workspace",
+        "step": "99"
+    },
+    {
+        "precision": "0.9213925004005432",
+        "rev": "workspace",
+        "step": "100"
+    },
+    {
+        "precision": "0.9177034497261047",
+        "rev": "workspace",
+        "step": "101"
+    },
+    {
+        "precision": "0.902927041053772",
+        "rev": "workspace",
+        "step": "102"
+    },
+    {
+        "precision": "0.917069137096405",
+        "rev": "workspace",
+        "step": "103"
+    },
+    {
+        "precision": "0.9219001531600952",
+        "rev": "workspace",
+        "step": "104"
+    },
+    {
+        "precision": "0.9229428172111511",
+        "rev": "workspace",
+        "step": "105"
+    },
+    {
+        "precision": "0.924790620803833",
+        "rev": "workspace",
+        "step": "106"
+    },
+    {
+        "precision": "0.9242166876792908",
+        "rev": "workspace",
+        "step": "107"
+    },
+    {
+        "precision": "0.9268407225608826",
+        "rev": "workspace",
+        "step": "108"
+    },
+    {
+        "precision": "0.9234229922294617",
+        "rev": "workspace",
+        "step": "109"
+    },
+    {
+        "precision": "0.9248214960098267",
+        "rev": "workspace",
+        "step": "110"
+    },
+    {
+        "precision": "0.924274742603302",
+        "rev": "workspace",
+        "step": "111"
+    },
+    {
+        "precision": "0.9250051379203796",
+        "rev": "workspace",
+        "step": "112"
+    },
+    {
+        "precision": "0.9220001101493835",
+        "rev": "workspace",
+        "step": "113"
+    },
+    {
+        "precision": "0.9239316582679749",
+        "rev": "workspace",
+        "step": "114"
+    },
+    {
+        "precision": "0.919522762298584",
+        "rev": "workspace",
+        "step": "115"
+    },
+    {
+        "precision": "0.8846381306648254",
+        "rev": "workspace",
+        "step": "116"
+    },
+    {
+        "precision": "0.9222221374511719",
+        "rev": "workspace",
+        "step": "117"
+    },
+    {
+        "precision": "0.9248053431510925",
+        "rev": "workspace",
+        "step": "118"
+    },
+    {
+        "precision": "0.9241549968719482",
+        "rev": "workspace",
+        "step": "119"
+    },
+    {
+        "precision": "0.9239866733551025",
+        "rev": "workspace",
+        "step": "120"
+    },
+    {
+        "precision": "0.9268172979354858",
+        "rev": "workspace",
+        "step": "121"
+    },
+    {
+        "precision": "0.9256641864776611",
+        "rev": "workspace",
+        "step": "122"
+    },
+    {
+        "precision": "0.9263013601303101",
+        "rev": "workspace",
+        "step": "123"
+    },
+    {
+        "precision": "0.9254547357559204",
+        "rev": "workspace",
+        "step": "124"
+    },
+    {
+        "precision": "0.9252419471740723",
+        "rev": "workspace",
+        "step": "125"
+    },
+    {
+        "precision": "0.921664297580719",
+        "rev": "workspace",
+        "step": "126"
+    },
+    {
+        "precision": "0.9219672083854675",
+        "rev": "workspace",
+        "step": "127"
+    },
+    {
+        "precision": "0.9148514866828918",
+        "rev": "workspace",
+        "step": "128"
+    }
+]
+    },
+    "title": "eval/precision",
+    "width": 300,
+    "height": 300,
+    "params": [
+        {
+            "name": "smooth",
+            "value": 0.001,
+            "bind": {
+                "input": "range",
+                "min": 0.001,
+                "max": 1,
+                "step": 0.001
+            }
+        }
+    ],
+    "layer": [
+        {
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "precision",
+                    "type": "quantitative",
+                    "title": "precision",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "transform": [
+                {
+                    "loess": "precision",
+                    "on": "step",
+                    "groupby": [
+                        "rev",
+                        "filename",
+                        "field",
+                        "filename::field"
+                    ],
+                    "bandwidth": {
+                        "signal": "smooth"
+                    }
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "point",
+                "tooltip": {
+                    "content": "data"
+                }
+            },
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "precision",
+                    "type": "quantitative",
+                    "title": "precision",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            }
+        }
+    ]
+}
+;
+            vegaEmbed('#static_eval_precision', spec);
+        </script>
+    </div>
+    
+</body>
+</html>
